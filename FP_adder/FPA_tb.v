@@ -1,4 +1,4 @@
-`include "FloatingPoint.v"
+// `include "FloatingPoint.v"
 module FPA_tb();
   reg clk, en, reset;
   reg [31:0] a;
@@ -8,6 +8,7 @@ module FPA_tb();
   wire overflow;
   fpa_with_regisers fpa (clk,reset,en,a, b, sum, overflow);
   integer test_no = 1;
+
   always
   begin
     #1 clk = ~clk;
