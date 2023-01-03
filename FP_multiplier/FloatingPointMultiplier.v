@@ -1,3 +1,44 @@
+module registerNbits #(parameter N = 32) (clk,reset,en, inp, out);
+	input clk,reset,en;
+	output reg [N-1:0] out;
+	input [N-1:0] inp;
+	always @(posedge clk)
+		begin
+			if (reset) 
+				out <= 'b0;
+			else if(en)
+				out <= inp;
+			
+		end
+endmodule
+
+module FloatingPointMultiplierSingle (clk,reset,en,inputA,inputB,result, OF);
+input clk,reset,en;
+
+input [32-1:0] inputA, inputB;
+output [32-1:0] result;
+output OF;
+
+wire [32-1:0] A_reg;
+wire [32-1:0] B_reg;
+wire [32-1:0] out;
+
+
+registerNbits #(32) regA (clk,reset,en,inputA, A_reg);
+registerNbits #(32) regB (clk,reset,en,inputB, B_reg);
+FloatingPointMultiplier 
+FloatingPointMultiplier_dut (
+  .A (A_reg),
+  . B (B_reg),
+  .O (out),
+  .OF  ( OF)
+);
+registerNbits #(32) outReg (clk,reset,en,out,result);
+
+endmodule
+
+
+
 module FloatingPointMultiplier (A, B, O, OF);
   input [31:0] A, B;
   output [31:0] O;
@@ -27,6 +68,8 @@ module FloatingPointMultiplier (A, B, O, OF);
 
   wire a_sign;
   wire b_sign;
+
+
   assign a_sign = A[31];
   assign a_exponent = A[30:23];//8bits
   assign a_mantissa = {1'b1,A[22:0]};

@@ -1,0 +1,10 @@
+Report Instance Areas: 
+-----+-----------------------------+-----------------------+-----+---------
+     |Instance                     |Module                 |Cells|Cell Area
+-----+-----------------------------+-----------------------+-----+---------
+1    |top                          |                       | 1755|     3687
+2    |  regA                       |registerNbits__0_18    |   67|      184
+3    |  regB                       |registerNbits__0_21    |   67|      184
+4    |  FloatingPointMultiplier_dut|FloatingPointMultiplier| 1554|     3134
+5    |  outReg                     |registerNbits          |   67|      184
+-----+-----------------------------+-----------------------+-----+---------

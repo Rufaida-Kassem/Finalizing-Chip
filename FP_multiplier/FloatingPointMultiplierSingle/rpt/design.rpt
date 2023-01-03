@@ -1,0 +1,36 @@
+Report Physical info: 
+------------------------+-----------------------------+-----------+------------
+                        |                             |Area (squm)|Leakage (uW)
+------------------------+-----------------------------+-----------+------------
+Design Name             |FloatingPointMultiplierSingle|           |            
+  Total Instances       |                         1755|       3687|      73.222
+    Macros              |                            0|          0|       0.000
+    Pads                |                            0|          0|       0.000
+    Phys                |                            0|          0|       0.000
+    Blackboxes          |                            0|          0|       0.000
+    Cells               |                         1755|       3687|      73.222
+      Buffers           |                            0|          0|       0.000
+      Inverters         |                          116|         62|       1.665
+      Clock-Gates       |                            3|         12|       0.177
+      Combinational     |                         1540|       3179|      63.785
+      Latches           |                            0|          0|       0.000
+      FlipFlops         |                           96|        434|       7.595
+       Single-Bit FF    |                           96|        434|       7.595
+       Multi-Bit FF     |                            0|          0|       0.000
+       Clock-Gated      |                           96|           |            
+       Bits             |                           96|        434|       7.595
+         Load-Enabled   |                            0|           |            
+         Clock-Gated    |                           96|           |            
+  Tristate Pin Count    |                            0|           |            
+Physical Info           |Placed                       |           |            
+  Chip Size (mm x mm)   |0.138 x 0.138                |      19152|            
+  Fixed Cell Area       |                             |          0|            
+    Phys Only           |                            0|          0|            
+  Placeable Area        |                             |       6028|            
+  Movable Cell Area     |                             |       3687|            
+  Utilization (%)       |                           61|           |            
+  Chip Utilization (%)  |                           61|           |            
+  Total Wire Length (mm)|                        7.268|           |            
+  Longest Wire (mm)     |                        0.076|           |            
+  Average Wire (mm)     |                        0.073|           |            
+------------------------+-----------------------------+-----------+------------
