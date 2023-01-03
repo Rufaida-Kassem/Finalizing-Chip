@@ -1,0 +1,2 @@
+.INCLUDE "/home/vlsi/Desktop/Mini_Project_2__/lib_data/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/spice/NangateOpenCellLibrary.spi"
+.INCLUDE "/home/vlsi/Desktop/Mini_Project_2__/work/calibre/_MultiplierTree.power.v.gz.sp"
