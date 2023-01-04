@@ -1,0 +1,14 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/vlsi/Desktop/Mini_Project_2__/work/calibre
+lvs_LvsfVersion 4
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {5 0 3 0}
+lvs_SourceCase YES
+lvs_LayoutCase YES
+lvs_PowerName VDD
+lvs_GroundName VSS
+lvs_GroundName GROUND
+lvs_LvsOutFile LVS_REPORT FloatingPointMultiplierSingle.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST _source.net_
+lvs_LvsOutFile RULES_FILE /home/vlsi/Desktop/Mini_Project_2__/work/calibre/_calibre-lvs.rule_
+lvs_LvsRunTimes 1672789719 1672789719

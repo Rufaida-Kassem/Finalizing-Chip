@@ -1,0 +1,1853 @@
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         FloatingPointMultiplierSingle.lvs.report
+LAYOUT NAME:              /home/vlsi/Desktop/Mini_Project_2__/work/calibre/FloatingPointMultiplierSingle.sp ('FloatingPointMultiplierSingle')
+SOURCE NAME:              _source.net_ ('FloatingPointMultiplierSingle')
+RULE FILE:                /home/vlsi/Desktop/Mini_Project_2__/work/calibre/_calibre-lvs.rule_
+RULE FILE TITLE:          LVS Rule File for FreePDK45
+CREATION TIME:            Wed Jan  4 01:48:39 2023
+CURRENT DIRECTORY:        /home/vlsi/Desktop/Mini_Project_2__/work/calibre
+USER NAME:                vlsi
+CALIBRE VERSION:          v2020.1_25.14    Mon Feb 3 16:40:25 PST 2020
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of nets.
+  Error:    Different numbers of instances.
+  Error:    Connectivity errors.
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  INCORRECT      FloatingPointMultiplierSingle FloatingPointMultiplierSingle
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   LVS COMPONENT TYPE PROPERTY            element
+   LVS COMPONENT SUBTYPE PROPERTY         model
+   // LVS PIN NAME PROPERTY
+   LVS POWER NAME                         "VDD"
+   LVS GROUND NAME                        "VSS" "GROUND"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    ALL
+   // LVS HCELL REPORT
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   NO
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            YES
+   LVS ALL CAPACITOR PINS SWAPPABLE       NO
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                NO
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS REVERSE WL                         NO
+   LVS SPICE PREFER PINS                  NO
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   // LVS SPICE EXCLUDE CELL SOURCE
+   // LVS SPICE EXCLUDE CELL LAYOUT
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            NO
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            YES
+   SOURCE CASE                            YES
+   LVS COMPARE CASE                       NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     50
+   LVS PROPERTY RESOLUTION MAXIMUM        32
+   // LVS SIGNATURE MAXIMUM
+   // LVS FILTER UNUSED OPTION
+   // LVS REPORT OPTION
+   LVS REPORT UNITS                       YES
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+   // LVS IGNORE DEVICE PIN
+   // LVS PREFER NETS FILTER SOURCE
+   // LVS PREFER NETS FILTER LAYOUT
+   LVS PREFER PORT NETS                   NO
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  YES
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             YES
+   LVS REDUCE SPLIT GATES                 YES
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           YES
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Trace Property
+
+   TRACE PROPERTY  mn(nmos_vtl)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vtl)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vtl)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vtl)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vth)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vth)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vth)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vth)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vtg)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vtg)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vtg)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vtg)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_thkox)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_thkox)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_thkox)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_thkox)  w w 4e-09 ABSOLUTE
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of nets (see below).
+  Error:    Different numbers of instances (see below).
+  Error:    Connectivity errors.
+
+LAYOUT CELL NAME:         FloatingPointMultiplierSingle
+SOURCE CELL NAME:         FloatingPointMultiplierSingle
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:            102       102
+
+ Nets:           11652     11666    *
+
+ Instances:      11439     11439         MN (4 pins)
+                 11439     11439         MP (4 pins)
+                ------    ------
+ Total Inst:     22878     22878
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:            102       102
+
+ Nets:            4348      4360    *
+
+ Instances:        136       123    *    MN (4 pins)
+                    93        80    *    MP (4 pins)
+                   569       569         SPDW_2_1 (4 pins)
+                    10        10         SPDW_2_2 (5 pins)
+                     1         1         SPDW_2_2_1 (6 pins)
+                     1         1         SPDW_2_2_2 (7 pins)
+                   490       490         SPDW_3_1 (5 pins)
+                     1         1         SPDW_3_3 (7 pins)
+                   609       609         SPUP_2_1 (4 pins)
+                     4         4         SPUP_2_2_1 (6 pins)
+                   490       490         SPUP_3_1 (5 pins)
+                  1883      1896    *    _invv (4 pins)
+                     9         9         _invx2v (4 pins)
+                   215       215         _nand2v (5 pins)
+                     6         6         _nand3v (6 pins)
+                     7         7         _nand4v (7 pins)
+                   703       703         _nor2v (5 pins)
+                    17        17         _nor3v (6 pins)
+                    25        25         _nor4v (7 pins)
+                   490       490         _sdw3v (5 pins)
+                  1053      1053         _smn2v (4 pins)
+                  1030      1030         _smp2v (4 pins)
+                   492       492         _sup3v (5 pins)
+                ------    ------
+ Total Inst:      8334      8321
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                                 INCORRECT OBJECTS
+**************************************************************************************************************
+
+
+LEGEND:
+-------
+
+  ne  = Naming Error (same layout name found in source
+        circuit, but object was matched otherwise).
+
+
+**************************************************************************************************************
+                                   INCORRECT NETS
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+  1    Net VDD                                                   VDD
+       --- 4626 Connections On This Net ---                      --- 4561 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SPDW_3_1):input                                          ** missing connection **
+         X11/X2088/M8(60.795,6.690):g
+       
+       
+       (SPUP_3_1):input                                          ** missing connection **
+         X11/X2088/M22(60.795,7.595):g
+       
+       
+       (SPDW_2_1):input                                          ** missing connection **
+         X11/X2088/M4(59.885,6.815):g
+       
+       
+       (SPUP_2_1):input                                          ** missing connection **
+         X11/X2088/M18(59.885,7.545):g
+       
+       
+       (SPDW_3_1):input                                          ** missing connection **
+         X5/X3834/M7(83.025,45.890):g
+       
+       
+       (SPUP_3_1):input                                          ** missing connection **
+         X5/X3834/M21(83.025,46.795):g
+       
+       
+       (SPDW_2_1):input                                          ** missing connection **
+         X5/X3834/M3(82.110,46.015):g
+       
+       
+       (SPUP_2_1):input                                          ** missing connection **
+         X5/X3834/M17(82.110,46.670):g
+       
+       
+       (SPDW_3_1):input                                          ** missing connection **
+         X4/X3610/M6(65.735,57.090):g
+       
+       
+       (SPUP_3_1):input                                          ** missing connection **
+         X4/X3610/M20(65.735,57.995):g
+       
+       
+       (SPDW_2_1):input                                          ** missing connection **
+         X4/X3610/M5(65.395,57.215):g
+       
+       
+       (SPUP_2_1):input                                          ** missing connection **
+         X4/X3610/M19(65.395,57.945):g
+       
+       
+       (SPDW_3_1):input                                          ** missing connection **
+         X4/X3593/M7(49.775,54.110):g
+       
+       
+       (SPUP_3_1):input                                          ** missing connection **
+         X4/X3593/M21(49.775,53.205):g
+       
+       
+       (SPDW_2_1):input                                          ** missing connection **
+         X4/X3593/M3(48.860,53.985):g
+       
+       
+       (SPUP_2_1):input                                          ** missing connection **
+         X4/X3593/M17(48.860,53.330):g
+       
+       
+       (SPUP_2_1):input                                          ** missing connection **
+         X1/X1625/M9(61.605,75.920):g
+       
+       
+       (_nor4v):in3                                              ** missing connection **
+         X4/X3557/M1(37.625,54.110):g
+         X4/X3557/M5(37.625,53.520):g
+       
+       
+       (_nand2v):in1                                             ** missing connection **
+         X1/X1625/M13(62.550,75.730):g
+         X1/X1625/M5(62.550,76.510):g
+       
+       
+       (_nor2v):in2                                              ** missing connection **
+         X1/X1625/M4(62.180,76.510):g
+         X1/X1625/M12(62.180,75.730):g
+       
+       
+       (_invv):in                                                ** missing connection **
+         X4/X3366/M1(43.720,54.290):g
+         X4/X3366/M3(43.720,54.880):g
+       
+       
+       (_smn2v):in1                                              ** missing connection **
+         X9/X1552/M4(44.105,17.980):g
+       
+       
+       (_smp2v):in1                                              ** missing connection **
+         X9/X1552/M18(44.105,18.565):g
+       
+       
+       (_smn2v):in1                                              ** missing connection **
+         X4/X2633/M4(3.255,56.820):g
+       
+       
+       (_smp2v):in1                                              ** missing connection **
+         X4/X2633/M18(3.255,56.235):g
+       
+       
+       (_smn2v):in2                                              ** missing connection **
+         X4/X3610/M1(64.630,57.215):g
+       
+       
+       (_smp2v):in2                                              ** missing connection **
+         X4/X3610/M15(64.630,57.870):g
+       
+       
+       (_smn2v):in1                                              ** missing connection **
+         X11/X2088/M2(59.500,6.815):g
+       
+       
+       (_smp2v):in1                                              ** missing connection **
+         X11/X2088/M16(59.500,7.470):g
+       
+       
+       (_sdw3v):in2                                              ** missing connection **
+         X4/X3593/M10(50.355,54.110):g
+       
+       
+       (_sup3v):in2                                              ** missing connection **
+         X4/X3593/M24(50.355,53.205):g
+       
+       
+       (_sdw3v):in2                                              ** missing connection **
+         X4/X3610/M11(66.695,57.090):g
+       
+       
+       (_sup3v):in3                                              ** missing connection **
+         X4/X3610/M25(66.695,57.995):g
+       
+       
+       (_sdw3v):in1                                              ** missing connection **
+         X11/X2088/M12(61.565,6.690):g
+       
+       
+       (_sup3v):in1                                              ** missing connection **
+         X11/X2088/M26(61.565,7.595):g
+       
+       
+       (_sdw3v):in3                                              ** missing connection **
+         X5/X3834/M10(83.605,45.890):g
+       
+       
+       (_sup3v):in3                                              ** missing connection **
+         X5/X3834/M24(83.605,46.795):g
+       
+       
+       (_smn2v):in2                                              ** missing connection **
+         X1/X1625/M1(61.605,76.510):g
+       
+       
+       X8/X2016/M27(41.615,24.080):b                             ** missing connection **
+       X8/X2016/M27(41.615,24.080):s                             ** missing connection **
+       X6/X3009/M27(22.515,38.080):b                             ** missing connection **
+       X6/X3009/M27(22.515,38.080):s                             ** missing connection **
+       X5/X3831/M27(81.705,43.680):b                             ** missing connection **
+       X5/X3831/M27(81.705,43.680):s                             ** missing connection **
+       X5/X3828/M14(76.030,43.680):b                             ** missing connection **
+       X5/X3828/M14(76.030,43.680):d                             ** missing connection **
+       X5/X3790/M27(41.615,42.320):b                             ** missing connection **
+       X5/X3790/M27(41.615,42.320):s                             ** missing connection **
+       X2/X1453/M5(1.715,73.120):b                               ** missing connection **
+       X2/X1453/M5(1.715,73.120):s                               ** missing connection **
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  2    Net VSS                                                   VSS
+       --- 4726 Connections On This Net ---                      --- 4671 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SPDW_3_1):input                                          ** missing connection **
+         X7/X1910/M8(40.655,29.090):g
+       
+       
+       (SPUP_3_1):input                                          ** missing connection **
+         X7/X1910/M22(40.655,29.995):g
+       
+       
+       (SPDW_2_1):input                                          ** missing connection **
+         X7/X1910/M4(39.745,29.215):g
+       
+       
+       (SPUP_2_1):input                                          ** missing connection **
+         X7/X1910/M18(39.745,29.945):g
+       
+       
+       (SPDW_3_1):input                                          ** missing connection **
+         X6/X3003/M7(20.515,37.490):g
+       
+       
+       (SPUP_3_1):input                                          ** missing connection **
+         X6/X3003/M21(20.515,38.395):g
+       
+       
+       (SPDW_2_1):input                                          ** missing connection **
+         X6/X3003/M3(19.600,37.615):g
+       
+       
+       (SPUP_2_1):input                                          ** missing connection **
+         X6/X3003/M17(19.600,38.270):g
+       
+       
+       (SPDW_3_1):input                                          ** missing connection **
+         X5/X3833/M6(82.835,40.290):g
+       
+       
+       (SPUP_3_1):input                                          ** missing connection **
+         X5/X3833/M20(82.835,41.195):g
+       
+       
+       (SPDW_2_1):input                                          ** missing connection **
+         X5/X3833/M5(82.495,40.415):g
+       
+       
+       (SPUP_2_1):input                                          ** missing connection **
+         X5/X3833/M19(82.495,41.145):g
+       
+       
+       (SPDW_3_1):input                                          ** missing connection **
+         X5/X3793/M6(43.695,42.910):g
+       
+       
+       (SPUP_3_1):input                                          ** missing connection **
+         X5/X3793/M20(43.695,42.005):g
+       
+       
+       (SPDW_2_1):input                                          ** missing connection **
+         X5/X3793/M5(43.355,42.785):g
+       
+       
+       (SPUP_2_1):input                                          ** missing connection **
+         X5/X3793/M19(43.355,42.055):g
+       
+       
+       (SPDW_3_1):input                                          ** missing connection **
+         X4/X3629/M7(82.755,54.290):g
+       
+       
+       (SPUP_3_1):input                                          ** missing connection **
+         X4/X3629/M21(82.755,55.195):g
+       
+       
+       (SPDW_2_1):input                                          ** missing connection **
+         X4/X3629/M3(83.670,54.415):g
+       
+       
+       (SPUP_2_1):input                                          ** missing connection **
+         X4/X3629/M17(83.670,55.070):g
+       
+       
+       (_smn2v):in2                                              ** missing connection **
+         X1/X1327/M4(3.255,76.780):g
+       
+       
+       (_smp2v):in2                                              ** missing connection **
+         X1/X1327/M18(3.255,77.365):g
+       
+       
+       (_smn2v):in2                                              ** missing connection **
+         X5/X3793/M1(42.590,42.785):g
+       
+       
+       (_smp2v):in2                                              ** missing connection **
+         X5/X3793/M15(42.590,42.130):g
+       
+       
+       (_smn2v):in2                                              ** missing connection **
+         X5/X3833/M1(81.730,40.415):g
+       
+       
+       (_smp2v):in2                                              ** missing connection **
+         X5/X3833/M15(81.730,41.070):g
+       
+       
+       (_smn2v):in1                                              ** missing connection **
+         X7/X1910/M2(39.360,29.215):g
+       
+       
+       (_smp2v):in1                                              ** missing connection **
+         X7/X1910/M16(39.360,29.870):g
+       
+       
+       (_sdw3v):in1                                              ** missing connection **
+         X7/X1910/M12(41.425,29.090):g
+       
+       
+       (_sup3v):in1                                              ** missing connection **
+         X7/X1910/M26(41.425,29.995):g
+       
+       
+       (_sdw3v):in2                                              ** missing connection **
+         X5/X3793/M11(44.655,42.910):g
+       
+       
+       (_sup3v):in2                                              ** missing connection **
+         X5/X3793/M25(44.655,42.005):g
+       
+       
+       (_sdw3v):in3                                              ** missing connection **
+         X4/X3629/M10(82.175,54.290):g
+       
+       
+       (_sup3v):in3                                              ** missing connection **
+         X4/X3629/M24(82.175,55.195):g
+       
+       
+       (_sdw3v):in2                                              ** missing connection **
+         X5/X3833/M11(83.795,40.290):g
+       
+       
+       (_sup3v):in2                                              ** missing connection **
+         X5/X3833/M25(83.795,41.195):g
+       
+       
+       (_sdw3v):in3                                              ** missing connection **
+         X6/X3003/M10(21.095,37.490):g
+       
+       
+       (_sup3v):in3                                              ** missing connection **
+         X6/X3003/M24(21.095,38.395):g
+       
+       
+       X8/X2016/M13(41.615,23.490):b                             ** missing connection **
+       X8/X2016/M13(41.615,23.490):d                             ** missing connection **
+       X8/X2016/M13(41.615,23.490):s                             ** missing connection **
+       X6/X3009/M13(22.515,37.490):b                             ** missing connection **
+       X6/X3009/M13(22.515,37.490):d                             ** missing connection **
+       X6/X3009/M13(22.515,37.490):s                             ** missing connection **
+       X5/X3831/M13(81.705,43.090):b                             ** missing connection **
+       X5/X3831/M13(81.705,43.090):d                             ** missing connection **
+       X5/X3831/M13(81.705,43.090):s                             ** missing connection **
+       X5/X3828/M0(76.030,43.090):b                              ** missing connection **
+       X5/X3828/M0(76.030,43.090):d                              ** missing connection **
+       X5/X3828/M0(76.030,43.090):s                              ** missing connection **
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  3    Net X11/284                                               ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+  4    ** no similar net **                                      B_reg[9]
+
+--------------------------------------------------------------------------------------------------------------
+
+  5    ** no similar net **                                      XFloatingPointMultiplier_dut/n_24
+
+--------------------------------------------------------------------------------------------------------------
+
+  6    ** no similar net **                                      XFloatingPointMultiplier_dut/Xi_0/n_751
+
+--------------------------------------------------------------------------------------------------------------
+
+  7    ** no similar net **                                      XFloatingPointMultiplier_dut/Xi_0/n_701
+
+--------------------------------------------------------------------------------------------------------------
+
+  8    ** no similar net **                                      XFloatingPointMultiplier_dut/Xi_0/n_695
+
+--------------------------------------------------------------------------------------------------------------
+
+  9    ** no similar net **                                      XFloatingPointMultiplier_dut/Xi_0/n_698
+
+--------------------------------------------------------------------------------------------------------------
+
+ 10    ** no similar net **                                      XFloatingPointMultiplier_dut/Xi_0/n_518
+
+--------------------------------------------------------------------------------------------------------------
+
+ 11    ** no similar net **                                      XFloatingPointMultiplier_dut/Xi_0/n_420
+
+--------------------------------------------------------------------------------------------------------------
+
+ 12    ** no similar net **                                      XFloatingPointMultiplier_dut/Xi_0/n_406
+
+--------------------------------------------------------------------------------------------------------------
+
+ 13    ** no similar net **                                      XFloatingPointMultiplier_dut/Xi_0/n_78
+
+--------------------------------------------------------------------------------------------------------------
+
+ 14    ** no similar net **                                      XregB/n_33
+
+--------------------------------------------------------------------------------------------------------------
+
+ 15    ** no similar net **                                      XregA/n_32
+
+--------------------------------------------------------------------------------------------------------------
+
+ 16    ** no similar net **                                      XregA/n_4
+
+
+**************************************************************************************************************
+                                 INCORRECT INSTANCES
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+ 17    X11/X2034/M1(64.455,1.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_1297/M_i_0  MN(NMOS_VTL)
+         g: X11/136                                                g: XFloatingPointMultiplier_dut/Xi_0/n_1758
+         d: VSS                                                    d: VSS
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 18    X11/X2034/M0(64.265,1.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_1297/M_i_1  MN(NMOS_VTL)
+         g: X11/133                                                g: XFloatingPointMultiplier_dut/Xi_0/n_1757
+         d: X11/200                                                d: XFloatingPointMultiplier_dut/Xi_0/n_1756
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 19    X11/X2029/M1(40.325,1.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_1283/M_i_0  MN(NMOS_VTL)
+         g: X11/117                                                g: XFloatingPointMultiplier_dut/Xi_0/n_1744
+         d: VSS                                                    d: VSS
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 20    X11/X2029/M0(40.135,1.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_1283/M_i_1  MN(NMOS_VTL)
+         g: X11/116                                                g: XFloatingPointMultiplier_dut/Xi_0/n_1743
+         d: X11/155                                                d: XFloatingPointMultiplier_dut/Xi_0/n_1742
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 21    X11/X2035/M1(67.695,1.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_1059/M_i_0  MN(NMOS_VTL)
+         g: X11/138                                                g: XFloatingPointMultiplier_dut/Xi_0/n_1765
+         d: VSS                                                    d: VSS
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 22    X11/X2035/M0(67.885,1.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_1059/M_i_1  MN(NMOS_VTL)
+         g: X11/136                                                g: XFloatingPointMultiplier_dut/Xi_0/n_1758
+         d: X11/204                                                d: XFloatingPointMultiplier_dut/Xi_0/n_1553
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 23    X11/X2032/M1(63.695,1.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_1057/M_i_0  MN(NMOS_VTL)
+         g: X11/133                                                g: XFloatingPointMultiplier_dut/Xi_0/n_1757
+         d: VSS                                                    d: VSS
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 24    X11/X2032/M0(63.505,1.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_1057/M_i_1  MN(NMOS_VTL)
+         g: X11/268                                                g: XFloatingPointMultiplier_dut/Xi_0/n_1552
+         d: X11/238                                                d: XFloatingPointMultiplier_dut/Xi_0/n_1551
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 25    X11/X1974/M4(43.030,1.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_1063/M_i_24  MN(NMOS_VTL)
+         g: X11/190                                                g: XFloatingPointMultiplier_dut/Xi_0/n_1558
+         d: VSS                                                    d: VSS
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 26    X11/X1974/M3(43.220,1.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_1063/M_i_19  MN(NMOS_VTL)
+         g: X11/186                                                g: XFloatingPointMultiplier_dut/Xi_0/n_1561
+         d: X11/231                                                d: XFloatingPointMultiplier_dut/o_mantissa[14]
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 27    X11/X1903/M1(78.715,1.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_27/M_i_0  MN(NMOS_VTL)
+         g: X11/142                                                g: XFloatingPointMultiplier_dut/Xi_0/n_39
+         d: VSS                                                    d: VSS
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 28    X11/X1903/M0(78.905,1.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_27/M_i_1  MN(NMOS_VTL)
+         g: 765                                                    g: XFloatingPointMultiplier_dut/Xi_0/n_50
+         d: X11/143                                                d: XFloatingPointMultiplier_dut/Xi_0/n_54
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 29    X11/X1979/M4(83.990,1.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_1040/M_i_24  MN(NMOS_VTL)
+         g: X11/246                                                g: XFloatingPointMultiplier_dut/Xi_0/n_1540
+         d: VSS                                                    d: VSS
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 30    X11/X1979/M3(83.800,1.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_1040/M_i_19  MN(NMOS_VTL)
+         g: X11/242                                                g: XFloatingPointMultiplier_dut/Xi_0/n_1543
+         d: X11/245                                                d: XFloatingPointMultiplier_dut/o_mantissa[7]
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 31    X11/X1978/M4(70.310,1.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_1050/M_i_24  MN(NMOS_VTL)
+         g: X11/270                                                g: XFloatingPointMultiplier_dut/Xi_0/n_1554
+         d: VSS                                                    d: VSS
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 32    X11/X1978/M3(70.120,1.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_1050/M_i_19  MN(NMOS_VTL)
+         g: X11/138                                                g: XFloatingPointMultiplier_dut/Xi_0/n_1765
+         d: X11/210                                                d: XFloatingPointMultiplier_dut/o_mantissa[9]
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 33    X11/X2066/M12(22.235,1.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_101/M_instance_194  MN(NMOS_VTL)
+         g: X11/168                                                g: XFloatingPointMultiplier_dut/Xi_0/n_171
+         d: VSS                                                    d: VSS
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 34    X11/X2066/M11(22.045,1.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_101/M_instance_199  MN(NMOS_VTL)
+         g: X11/250                                                g: XFloatingPointMultiplier_dut/Xi_0/n_173
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 35    X11/X2066/M10(21.855,1.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_101/M_instance_203  MN(NMOS_VTL)
+         g: 728                                                    g: XFloatingPointMultiplier_dut/Xi_0/n_198
+         d: X11/X2066/14                                           d: XFloatingPointMultiplier_dut/Xi_0/Xi_101/net_005
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 36    X11/X2070/M12(25.275,1.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_118/M_instance_194  MN(NMOS_VTL)
+         g: X11/148                                                g: XFloatingPointMultiplier_dut/Xi_0/n_232
+         d: VSS                                                    d: VSS
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 37    X11/X2070/M11(25.085,1.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_118/M_instance_199  MN(NMOS_VTL)
+         g: X11/251                                                g: XFloatingPointMultiplier_dut/Xi_0/n_205
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 38    X11/X2070/M10(24.895,1.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_118/M_instance_203  MN(NMOS_VTL)
+         g: X11/108                                                g: XFloatingPointMultiplier_dut/Xi_0/n_234
+         d: X11/X2070/14                                           d: XFloatingPointMultiplier_dut/Xi_0/Xi_118/net_005
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 39    X11/X2071/M12(30.215,1.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_103/M_instance_194  MN(NMOS_VTL)
+         g: X11/149                                                g: XFloatingPointMultiplier_dut/Xi_0/n_177
+         d: VSS                                                    d: VSS
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 40    X11/X2071/M11(30.025,1.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_103/M_instance_199  MN(NMOS_VTL)
+         g: X11/176                                                g: XFloatingPointMultiplier_dut/Xi_0/n_202
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 41    X11/X2071/M10(29.835,1.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_103/M_instance_203  MN(NMOS_VTL)
+         g: X11/173                                                g: XFloatingPointMultiplier_dut/Xi_0/n_204
+         d: X11/X2071/14                                           d: XFloatingPointMultiplier_dut/Xi_0/Xi_103/net_005
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 42    X11/X2084/M12(54.155,1.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_64/M_instance_194  MN(NMOS_VTL)
+         g: X11/275                                                g: XFloatingPointMultiplier_dut/Xi_0/n_105
+         d: VSS                                                    d: VSS
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 43    X11/X2084/M11(53.965,1.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_64/M_instance_199  MN(NMOS_VTL)
+         g: X11/264                                                g: XFloatingPointMultiplier_dut/Xi_0/n_124
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 44    X11/X2084/M10(53.775,1.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_64/M_instance_203  MN(NMOS_VTL)
+         g: X11/124                                                g: XFloatingPointMultiplier_dut/Xi_0/n_126
+         d: X11/X2084/14                                           d: XFloatingPointMultiplier_dut/Xi_0/Xi_64/net_005
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 45    X11/X2080/M12(46.265,1.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_76/M_instance_194  MN(NMOS_VTL)
+         g: X11/263                                                g: XFloatingPointMultiplier_dut/Xi_0/n_148
+         d: VSS                                                    d: VSS
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 46    X11/X2080/M11(46.455,1.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_76/M_instance_199  MN(NMOS_VTL)
+         g: X11/193                                                g: XFloatingPointMultiplier_dut/Xi_0/n_127
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 47    X11/X2080/M10(46.645,1.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_76/M_instance_203  MN(NMOS_VTL)
+         g: X11/122                                                g: XFloatingPointMultiplier_dut/Xi_0/n_129
+         d: X11/X2080/14                                           d: XFloatingPointMultiplier_dut/Xi_0/Xi_76/net_005
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 48    X11/X2060/M12(16.155,1.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_117/M_instance_194  MN(NMOS_VTL)
+         g: X11/259                                                g: XFloatingPointMultiplier_dut/Xi_0/n_226
+         d: VSS                                                    d: VSS
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 49    X11/X2060/M11(15.965,1.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_117/M_instance_199  MN(NMOS_VTL)
+         g: X11/167                                                g: XFloatingPointMultiplier_dut/Xi_0/n_230
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 50    X11/X2060/M10(15.775,1.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_117/M_instance_203  MN(NMOS_VTL)
+         g: X11/169                                                g: XFloatingPointMultiplier_dut/Xi_0/n_203
+         d: X11/X2060/14                                           d: XFloatingPointMultiplier_dut/Xi_0/Xi_117/net_005
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 51    X11/X2057/M12(9.215,1.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_82/M_instance_194  MN(NMOS_VTL)
+         g: X11/166                                                g: XFloatingPointMultiplier_dut/Xi_0/n_1482
+         d: VSS                                                    d: VSS
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 52    X11/X2057/M11(9.405,1.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_82/M_instance_199  MN(NMOS_VTL)
+         g: X11/165                                                g: XFloatingPointMultiplier_dut/Xi_0/n_1504
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 53    X11/X2057/M10(9.595,1.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_82/M_instance_203  MN(NMOS_VTL)
+         g: X11/103                                                g: XFloatingPointMultiplier_dut/Xi_0/n_1524
+         d: X11/X2057/14                                           d: XFloatingPointMultiplier_dut/Xi_0/Xi_82/net_005
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 54    X11/X2054/M12(3.615,1.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_95/M_instance_194  MN(NMOS_VTL)
+         g: X11/221                                                g: XFloatingPointMultiplier_dut/Xi_0/n_1459
+         d: VSS                                                    d: VSS
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 55    X11/X2054/M11(3.425,1.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_95/M_instance_199  MN(NMOS_VTL)
+         g: X11/163                                                g: XFloatingPointMultiplier_dut/Xi_0/n_1481
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 56    X11/X2054/M10(3.235,1.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_95/M_instance_203  MN(NMOS_VTL)
+         g: X11/101                                                g: XFloatingPointMultiplier_dut/Xi_0/n_1503
+         d: X11/X2054/14                                           d: XFloatingPointMultiplier_dut/Xi_0/Xi_95/net_005
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 57    X11/X2063/M12(19.195,1.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_85/M_instance_194  MN(NMOS_VTL)
+         g: X11/223                                                g: XFloatingPointMultiplier_dut/Xi_0/n_164
+         d: VSS                                                    d: VSS
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 58    X11/X2063/M11(19.005,1.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_85/M_instance_199  MN(NMOS_VTL)
+         g: X11/249                                                g: XFloatingPointMultiplier_dut/Xi_0/n_162
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 59    X11/X2063/M10(18.815,1.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_85/M_instance_203  MN(NMOS_VTL)
+         g: 724                                                    g: XFloatingPointMultiplier_dut/Xi_0/n_160
+         d: X11/X2063/14                                           d: XFloatingPointMultiplier_dut/Xi_0/Xi_85/net_005
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 60    X11/X2084/M2(52.090,1.215)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_64/M_instance_170  MN(NMOS_VTL)
+         g: X11/275                                                g: XFloatingPointMultiplier_dut/Xi_0/n_105
+         d: VSS                                                    d: VSS
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 61    X11/X2084/M1(51.900,1.215)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_64/M_instance_166  MN(NMOS_VTL)
+         g: X11/264                                                g: XFloatingPointMultiplier_dut/Xi_0/n_124
+         d: X11/X2084/9                                            d: XFloatingPointMultiplier_dut/Xi_0/Xi_64/net_001
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 62    X11/X2080/M2(48.330,1.215)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_76/M_instance_170  MN(NMOS_VTL)
+         g: X11/263                                                g: XFloatingPointMultiplier_dut/Xi_0/n_148
+         d: VSS                                                    d: VSS
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 63    X11/X2080/M1(48.520,1.215)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_76/M_instance_166  MN(NMOS_VTL)
+         g: X11/193                                                g: XFloatingPointMultiplier_dut/Xi_0/n_127
+         d: X11/X2080/9                                            d: XFloatingPointMultiplier_dut/Xi_0/Xi_76/net_001
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 64    X11/X2054/M2(1.550,1.215)  MN(NMOS_VTL)                   XFloatingPointMultiplier_dut/Xi_0/Xi_95/M_instance_170  MN(NMOS_VTL)
+         g: X11/221                                                g: XFloatingPointMultiplier_dut/Xi_0/n_1459
+         d: VSS                                                    d: VSS
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 65    X11/X2054/M1(1.360,1.215)  MN(NMOS_VTL)                   XFloatingPointMultiplier_dut/Xi_0/Xi_95/M_instance_166  MN(NMOS_VTL)
+         g: X11/163                                                g: XFloatingPointMultiplier_dut/Xi_0/n_1481
+         d: X11/X2054/9                                            d: XFloatingPointMultiplier_dut/Xi_0/Xi_95/net_001
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 66    X11/X2060/M2(14.090,1.215)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_117/M_instance_170  MN(NMOS_VTL)
+         g: X11/259                                                g: XFloatingPointMultiplier_dut/Xi_0/n_226
+         d: VSS                                                    d: VSS
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 67    X11/X2060/M1(13.900,1.215)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_117/M_instance_166  MN(NMOS_VTL)
+         g: X11/167                                                g: XFloatingPointMultiplier_dut/Xi_0/n_230
+         d: X11/X2060/9                                            d: XFloatingPointMultiplier_dut/Xi_0/Xi_117/net_001
+         b: X11/284                                                ** no similar net **
+         ** VSS **                                                 b: VSS
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:             102        102            0            0
+
+   Nets:             4347       4347            1           13
+
+   Instances:         123        123           13            0    MN(NMOS_VTL)
+                       80         80           13            0    MP(PMOS_VTL)
+                      569        569            0            0    SPDW_2_1
+                       10         10            0            0    SPDW_2_2
+                        1          1            0            0    SPDW_2_2_1
+                        1          1            0            0    SPDW_2_2_2
+                      490        490            0            0    SPDW_3_1
+                        1          1            0            0    SPDW_3_3
+                      609        609            0            0    SPUP_2_1
+                        4          4            0            0    SPUP_2_2_1
+                      490        490            0            0    SPUP_3_1
+                     1883       1883            0           13    _invv
+                        9          9            0            0    _invx2v
+                      215        215            0            0    _nand2v
+                        6          6            0            0    _nand3v
+                        7          7            0            0    _nand4v
+                      703        703            0            0    _nor2v
+                       17         17            0            0    _nor3v
+                       25         25            0            0    _nor4v
+                      490        490            0            0    _sdw3v
+                     1053       1053            0            0    _smn2v
+                     1030       1030            0            0    _smp2v
+                      492        492            0            0    _sup3v
+                  -------    -------    ---------    ---------
+   Total Inst:       8308       8308           26           13
+
+
+o Statistics:
+
+   260 layout mos transistors were reduced to 122.  7 connecting nets were deleted.
+     127 mos transistors were deleted by parallel reduction.
+     11 mos transistors and 7 connecting nets were deleted by split-gate reduction.
+   260 source mos transistors were reduced to 122.  7 connecting nets were deleted.
+     127 mos transistors were deleted by parallel reduction.
+     11 mos transistors and 7 connecting nets were deleted by split-gate reduction.
+
+   2 source nets had all their pins removed and were deleted.
+
+
+o Initial Correspondence Points:
+
+   Ports:        VDD VSS result[31] result[30] result[29] result[27] result[26] result[23]
+                 result[25] result[22] result[24] result[21] result[20] inputA[16] inputB[16]
+                 result[19] inputB[13] result[18] inputB[11] inputB[9] inputB[14] inputA[14]
+                 inputA[8] result[17] inputA[11] inputA[6] inputA[10] inputA[12] inputA[9]
+                 inputA[7] inputA[13] result[16] result[15] result[14] result[13] result[12] en
+                 reset result[11] clk result[0] inputB[31] inputB[17] inputB[25] inputB[28]
+                 inputA[20] inputB[18] inputB[3] inputA[1] inputA[2]
+
+
+**************************************************************************************************************
+                             DETAILED INSTANCE CONNECTIONS
+
+       LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+          (This section contains detailed information about connections of
+           matched instances that are involved in net discrepancies).
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_smn2v)                                                  (_smn2v)
+         in1: X1/247                                               in2: XFloatingPointMultiplier_dut/Xi_5/n_0
+         out1: X1/231                                              out1: XFloatingPointMultiplier_dut/n_1
+         out2: VSS                                                 out2: VSS
+         in2: VDD                                                  ** VDD **
+         ** no similar net **                                      in1: XFloatingPointMultiplier_dut/n_24
+
+       Devices: 
+         X1/X1625/M1(61.605,76.510)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_5/Xi_1/M_i_0  MN(NMOS_VTL) 
+         X1/X1625/M0(61.415,76.510)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_5/Xi_1/M_i_1  MN(NMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_sup3v)                                                  (_sup3v)
+         in1: X6/246                                               in1: XFloatingPointMultiplier_dut/Xi_0/n_369
+         in2: X6/271                                               in2: XFloatingPointMultiplier_dut/Xi_0/n_408
+         out1: X6/X3003/14                                         out1: XFloatingPointMultiplier_dut/Xi_0/Xi_206/net_005
+         out2: VDD                                                 out2: VDD
+         in3: VSS                                                  ** VSS **
+         ** no similar net **                                      in3: XFloatingPointMultiplier_dut/Xi_0/n_406
+
+       Devices: 
+         X6/X3003/M26(21.475,38.395)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_206/M_instance_275  MP(PMOS_VTL) 
+         X6/X3003/M25(21.285,38.395)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_206/M_instance_280  MP(PMOS_VTL) 
+         X6/X3003/M24(21.095,38.395)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_206/M_instance_284  MP(PMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_sdw3v)                                                  (_sdw3v)
+         in1: X6/246                                               in1: XFloatingPointMultiplier_dut/Xi_0/n_369
+         in2: X6/271                                               in2: XFloatingPointMultiplier_dut/Xi_0/n_408
+         out1: X6/X3003/14                                         out1: XFloatingPointMultiplier_dut/Xi_0/Xi_206/net_005
+         out2: VSS                                                 out2: VSS
+         in3: VSS                                                  ** VSS **
+         ** no similar net **                                      in3: XFloatingPointMultiplier_dut/Xi_0/n_406
+
+       Devices: 
+         X6/X3003/M12(21.475,37.490)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_206/M_instance_194  MN(NMOS_VTL) 
+         X6/X3003/M11(21.285,37.490)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_206/M_instance_199  MN(NMOS_VTL) 
+         X6/X3003/M10(21.095,37.490)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_206/M_instance_203  MN(NMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_sup3v)                                                  (_sup3v)
+         in1: X5/434                                               in1: XFloatingPointMultiplier_dut/Xi_0/n_689
+         in2: X5/357                                               in2: XFloatingPointMultiplier_dut/Xi_0/n_722
+         out1: X5/X3834/14                                         out1: XFloatingPointMultiplier_dut/Xi_0/Xi_365/net_005
+         out2: VDD                                                 out2: VDD
+         in3: VDD                                                  ** VDD **
+         ** no similar net **                                      in3: XFloatingPointMultiplier_dut/Xi_0/n_695
+
+       Devices: 
+         X5/X3834/M26(83.985,46.795)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_365/M_instance_275  MP(PMOS_VTL) 
+         X5/X3834/M25(83.795,46.795)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_365/M_instance_280  MP(PMOS_VTL) 
+         X5/X3834/M24(83.605,46.795)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_365/M_instance_284  MP(PMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_sdw3v)                                                  (_sdw3v)
+         in1: X5/434                                               in1: XFloatingPointMultiplier_dut/Xi_0/n_689
+         in2: X5/357                                               in2: XFloatingPointMultiplier_dut/Xi_0/n_722
+         out1: X5/X3834/14                                         out1: XFloatingPointMultiplier_dut/Xi_0/Xi_365/net_005
+         out2: VSS                                                 out2: VSS
+         in3: VDD                                                  ** VDD **
+         ** no similar net **                                      in3: XFloatingPointMultiplier_dut/Xi_0/n_695
+
+       Devices: 
+         X5/X3834/M12(83.985,45.890)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_365/M_instance_194  MN(NMOS_VTL) 
+         X5/X3834/M11(83.795,45.890)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_365/M_instance_199  MN(NMOS_VTL) 
+         X5/X3834/M10(83.605,45.890)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_365/M_instance_203  MN(NMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_sup3v)                                                  (_sup3v)
+         in1: 487                                                  in1: XFloatingPointMultiplier_dut/Xi_0/n_663
+         in3: 485                                                  in3: XFloatingPointMultiplier_dut/Xi_0/n_665
+         out1: X5/X3833/14                                         out1: XFloatingPointMultiplier_dut/Xi_0/Xi_351/net_005
+         out2: VDD                                                 out2: VDD
+         in2: VSS                                                  ** VSS **
+         ** no similar net **                                      in2: XFloatingPointMultiplier_dut/Xi_0/n_698
+
+       Devices: 
+         X5/X3833/M26(83.985,41.195)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_351/M_instance_275  MP(PMOS_VTL) 
+         X5/X3833/M25(83.795,41.195)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_351/M_instance_280  MP(PMOS_VTL) 
+         X5/X3833/M24(83.605,41.195)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_351/M_instance_284  MP(PMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_sdw3v)                                                  (_sdw3v)
+         in1: 487                                                  in1: XFloatingPointMultiplier_dut/Xi_0/n_663
+         in3: 485                                                  in3: XFloatingPointMultiplier_dut/Xi_0/n_665
+         out1: X5/X3833/14                                         out1: XFloatingPointMultiplier_dut/Xi_0/Xi_351/net_005
+         out2: VSS                                                 out2: VSS
+         in2: VSS                                                  ** VSS **
+         ** no similar net **                                      in2: XFloatingPointMultiplier_dut/Xi_0/n_698
+
+       Devices: 
+         X5/X3833/M12(83.985,40.290)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_351/M_instance_194  MN(NMOS_VTL) 
+         X5/X3833/M11(83.795,40.290)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_351/M_instance_199  MN(NMOS_VTL) 
+         X5/X3833/M10(83.605,40.290)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_351/M_instance_203  MN(NMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_sup3v)                                                  (_sup3v)
+         in2: 760                                                  in2: XFloatingPointMultiplier_dut/Xi_0/n_76
+         in3: 759                                                  in3: XFloatingPointMultiplier_dut/Xi_0/n_74
+         out1: X11/X2088/14                                        out1: XFloatingPointMultiplier_dut/Xi_0/Xi_41/net_005
+         out2: VDD                                                 out2: VDD
+         in1: VDD                                                  ** VDD **
+         ** no similar net **                                      in1: XFloatingPointMultiplier_dut/Xi_0/n_78
+
+       Devices: 
+         X11/X2088/M26(61.565,7.595)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_41/M_instance_275  MP(PMOS_VTL) 
+         X11/X2088/M25(61.375,7.595)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_41/M_instance_280  MP(PMOS_VTL) 
+         X11/X2088/M24(61.185,7.595)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_41/M_instance_284  MP(PMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_sdw3v)                                                  (_sdw3v)
+         in2: 760                                                  in2: XFloatingPointMultiplier_dut/Xi_0/n_76
+         in3: 759                                                  in3: XFloatingPointMultiplier_dut/Xi_0/n_74
+         out1: X11/X2088/14                                        out1: XFloatingPointMultiplier_dut/Xi_0/Xi_41/net_005
+         out2: VSS                                                 out2: VSS
+         in1: VDD                                                  ** VDD **
+         ** no similar net **                                      in1: XFloatingPointMultiplier_dut/Xi_0/n_78
+
+       Devices: 
+         X11/X2088/M12(61.565,6.690)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_41/M_instance_194  MN(NMOS_VTL) 
+         X11/X2088/M11(61.375,6.690)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_41/M_instance_199  MN(NMOS_VTL) 
+         X11/X2088/M10(61.185,6.690)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_41/M_instance_203  MN(NMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_sup3v)                                                  (_sup3v)
+         in1: X4/293                                               in3: XFloatingPointMultiplier_dut/Xi_0/n_780
+         in2: X4/343                                               in1: XFloatingPointMultiplier_dut/Xi_0/n_753
+         out1: X4/X3610/14                                         out1: XFloatingPointMultiplier_dut/Xi_0/Xi_393/net_005
+         out2: VDD                                                 out2: VDD
+         in3: VDD                                                  ** VDD **
+         ** no similar net **                                      in2: XFloatingPointMultiplier_dut/Xi_0/n_751
+
+       Devices: 
+         X4/X3610/M26(66.885,57.995)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_275  MP(PMOS_VTL) 
+         X4/X3610/M25(66.695,57.995)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_280  MP(PMOS_VTL) 
+         X4/X3610/M24(66.505,57.995)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_284  MP(PMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_sdw3v)                                                  (_sdw3v)
+         in1: X4/343                                               in1: XFloatingPointMultiplier_dut/Xi_0/n_753
+         in3: X4/293                                               in3: XFloatingPointMultiplier_dut/Xi_0/n_780
+         out1: X4/X3610/14                                         out1: XFloatingPointMultiplier_dut/Xi_0/Xi_393/net_005
+         out2: VSS                                                 out2: VSS
+         in2: VDD                                                  ** VDD **
+         ** no similar net **                                      in2: XFloatingPointMultiplier_dut/Xi_0/n_751
+
+       Devices: 
+         X4/X3610/M12(66.885,57.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_194  MN(NMOS_VTL) 
+         X4/X3610/M11(66.695,57.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_199  MN(NMOS_VTL) 
+         X4/X3610/M10(66.505,57.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_203  MN(NMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_sup3v)                                                  (_sup3v)
+         in1: X4/286                                               in2: XFloatingPointMultiplier_dut/Xi_0/n_1288
+         in3: X4/327                                               in1: XFloatingPointMultiplier_dut/Xi_0/n_1266
+         out1: X4/X3593/14                                         out1: XFloatingPointMultiplier_dut/Xi_0/Xi_405/net_005
+         out2: VDD                                                 out2: VDD
+         in2: VDD                                                  ** VDD **
+         ** no similar net **                                      in3: B_reg[9]
+
+       Devices: 
+         X4/X3593/M26(50.735,53.205)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_405/M_instance_275  MP(PMOS_VTL) 
+         X4/X3593/M25(50.545,53.205)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_405/M_instance_280  MP(PMOS_VTL) 
+         X4/X3593/M24(50.355,53.205)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_405/M_instance_284  MP(PMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_sdw3v)                                                  (_sdw3v)
+         in1: X4/286                                               in2: XFloatingPointMultiplier_dut/Xi_0/n_1288
+         in3: X4/327                                               in1: XFloatingPointMultiplier_dut/Xi_0/n_1266
+         out1: X4/X3593/14                                         out1: XFloatingPointMultiplier_dut/Xi_0/Xi_405/net_005
+         out2: VSS                                                 out2: VSS
+         in2: VDD                                                  ** VDD **
+         ** no similar net **                                      in3: B_reg[9]
+
+       Devices: 
+         X4/X3593/M12(50.735,54.110)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_405/M_instance_194  MN(NMOS_VTL) 
+         X4/X3593/M11(50.545,54.110)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_405/M_instance_199  MN(NMOS_VTL) 
+         X4/X3593/M10(50.355,54.110)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_405/M_instance_203  MN(NMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_sup3v)                                                  (_sup3v)
+         in1: 407                                                  in1: XFloatingPointMultiplier_dut/Xi_0/n_699
+         in2: X4/346                                               in2: XFloatingPointMultiplier_dut/Xi_0/n_732
+         out1: X4/X3629/14                                         out1: XFloatingPointMultiplier_dut/Xi_0/Xi_368/net_005
+         out2: VDD                                                 out2: VDD
+         in3: VSS                                                  ** VSS **
+         ** no similar net **                                      in3: XFloatingPointMultiplier_dut/Xi_0/n_701
+
+       Devices: 
+         X4/X3629/M26(81.795,55.195)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_368/M_instance_275  MP(PMOS_VTL) 
+         X4/X3629/M25(81.985,55.195)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_368/M_instance_280  MP(PMOS_VTL) 
+         X4/X3629/M24(82.175,55.195)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_368/M_instance_284  MP(PMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_sdw3v)                                                  (_sdw3v)
+         in1: 407                                                  in1: XFloatingPointMultiplier_dut/Xi_0/n_699
+         in2: X4/346                                               in2: XFloatingPointMultiplier_dut/Xi_0/n_732
+         out1: X4/X3629/14                                         out1: XFloatingPointMultiplier_dut/Xi_0/Xi_368/net_005
+         out2: VSS                                                 out2: VSS
+         in3: VSS                                                  ** VSS **
+         ** no similar net **                                      in3: XFloatingPointMultiplier_dut/Xi_0/n_701
+
+       Devices: 
+         X4/X3629/M12(81.795,54.290)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_368/M_instance_194  MN(NMOS_VTL) 
+         X4/X3629/M11(81.985,54.290)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_368/M_instance_199  MN(NMOS_VTL) 
+         X4/X3629/M10(82.175,54.290)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_368/M_instance_203  MN(NMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_sup3v)                                                  (_sup3v)
+         in1: X5/374                                               in1: XFloatingPointMultiplier_dut/Xi_0/n_520
+         in3: X5/397                                               in3: XFloatingPointMultiplier_dut/Xi_0/n_516
+         out1: X5/X3793/14                                         out1: XFloatingPointMultiplier_dut/Xi_0/Xi_264/net_005
+         out2: VDD                                                 out2: VDD
+         in2: VSS                                                  ** VSS **
+         ** no similar net **                                      in2: XFloatingPointMultiplier_dut/Xi_0/n_518
+
+       Devices: 
+         X5/X3793/M26(44.845,42.005)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_264/M_instance_275  MP(PMOS_VTL) 
+         X5/X3793/M25(44.655,42.005)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_264/M_instance_280  MP(PMOS_VTL) 
+         X5/X3793/M24(44.465,42.005)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_264/M_instance_284  MP(PMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_sdw3v)                                                  (_sdw3v)
+         in1: X5/374                                               in1: XFloatingPointMultiplier_dut/Xi_0/n_520
+         in3: X5/397                                               in3: XFloatingPointMultiplier_dut/Xi_0/n_516
+         out1: X5/X3793/14                                         out1: XFloatingPointMultiplier_dut/Xi_0/Xi_264/net_005
+         out2: VSS                                                 out2: VSS
+         in2: VSS                                                  ** VSS **
+         ** no similar net **                                      in2: XFloatingPointMultiplier_dut/Xi_0/n_518
+
+       Devices: 
+         X5/X3793/M12(44.845,42.910)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_264/M_instance_194  MN(NMOS_VTL) 
+         X5/X3793/M11(44.655,42.910)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_264/M_instance_199  MN(NMOS_VTL) 
+         X5/X3793/M10(44.465,42.910)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_264/M_instance_203  MN(NMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_sup3v)                                                  (_sup3v)
+         in2: 514                                                  in2: XFloatingPointMultiplier_dut/Xi_0/n_399
+         in3: X7/253                                               in3: XFloatingPointMultiplier_dut/Xi_0/n_438
+         out1: X7/X1910/14                                         out1: XFloatingPointMultiplier_dut/Xi_0/Xi_223/net_005
+         out2: VDD                                                 out2: VDD
+         in1: VSS                                                  ** VSS **
+         ** no similar net **                                      in1: XFloatingPointMultiplier_dut/Xi_0/n_420
+
+       Devices: 
+         X7/X1910/M26(41.425,29.995)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_223/M_instance_275  MP(PMOS_VTL) 
+         X7/X1910/M25(41.235,29.995)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_223/M_instance_280  MP(PMOS_VTL) 
+         X7/X1910/M24(41.045,29.995)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_223/M_instance_284  MP(PMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_sdw3v)                                                  (_sdw3v)
+         in2: 514                                                  in2: XFloatingPointMultiplier_dut/Xi_0/n_399
+         in3: X7/253                                               in3: XFloatingPointMultiplier_dut/Xi_0/n_438
+         out1: X7/X1910/14                                         out1: XFloatingPointMultiplier_dut/Xi_0/Xi_223/net_005
+         out2: VSS                                                 out2: VSS
+         in1: VSS                                                  ** VSS **
+         ** no similar net **                                      in1: XFloatingPointMultiplier_dut/Xi_0/n_420
+
+       Devices: 
+         X7/X1910/M12(41.425,29.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_223/M_instance_194  MN(NMOS_VTL) 
+         X7/X1910/M11(41.235,29.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_223/M_instance_199  MN(NMOS_VTL) 
+         X7/X1910/M10(41.045,29.090)  MN(NMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_223/M_instance_203  MN(NMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_smp2v)                                                  (_smp2v)
+         in2: 760                                                  in2: XFloatingPointMultiplier_dut/Xi_0/n_76
+         out1: X11/X2088/9                                         out1: XFloatingPointMultiplier_dut/Xi_0/Xi_41/net_001
+         out2: VDD                                                 out2: VDD
+         in1: VDD                                                  ** VDD **
+         ** no similar net **                                      in1: XFloatingPointMultiplier_dut/Xi_0/n_78
+
+       Devices: 
+         X11/X2088/M16(59.500,7.470)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_41/M_instance_251  MP(PMOS_VTL) 
+         X11/X2088/M15(59.310,7.470)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_41/M_instance_246  MP(PMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_smn2v)                                                  (_smn2v)
+         in2: 760                                                  in2: XFloatingPointMultiplier_dut/Xi_0/n_76
+         out1: X11/X2088/9                                         out1: XFloatingPointMultiplier_dut/Xi_0/Xi_41/net_001
+         out2: VSS                                                 out2: VSS
+         in1: VDD                                                  ** VDD **
+         ** no similar net **                                      in1: XFloatingPointMultiplier_dut/Xi_0/n_78
+
+       Devices: 
+         X11/X2088/M2(59.500,6.815)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_41/M_instance_170  MN(NMOS_VTL) 
+         X11/X2088/M1(59.310,6.815)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_41/M_instance_166  MN(NMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_smp2v)                                                  (_smp2v)
+         in2: 514                                                  in2: XFloatingPointMultiplier_dut/Xi_0/n_399
+         out1: X7/X1910/9                                          out1: XFloatingPointMultiplier_dut/Xi_0/Xi_223/net_001
+         out2: VDD                                                 out2: VDD
+         in1: VSS                                                  ** VSS **
+         ** no similar net **                                      in1: XFloatingPointMultiplier_dut/Xi_0/n_420
+
+       Devices: 
+         X7/X1910/M16(39.360,29.870)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_223/M_instance_251  MP(PMOS_VTL) 
+         X7/X1910/M15(39.170,29.870)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_223/M_instance_246  MP(PMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_smn2v)                                                  (_smn2v)
+         in2: 514                                                  in2: XFloatingPointMultiplier_dut/Xi_0/n_399
+         out1: X7/X1910/9                                          out1: XFloatingPointMultiplier_dut/Xi_0/Xi_223/net_001
+         out2: VSS                                                 out2: VSS
+         in1: VSS                                                  ** VSS **
+         ** no similar net **                                      in1: XFloatingPointMultiplier_dut/Xi_0/n_420
+
+       Devices: 
+         X7/X1910/M2(39.360,29.215)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_223/M_instance_170  MN(NMOS_VTL) 
+         X7/X1910/M1(39.170,29.215)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_223/M_instance_166  MN(NMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_smp2v)                                                  (_smp2v)
+         in1: X4/343                                               in1: XFloatingPointMultiplier_dut/Xi_0/n_753
+         out1: X4/X3610/9                                          out1: XFloatingPointMultiplier_dut/Xi_0/Xi_393/net_001
+         out2: VDD                                                 out2: VDD
+         in2: VDD                                                  ** VDD **
+         ** no similar net **                                      in2: XFloatingPointMultiplier_dut/Xi_0/n_751
+
+       Devices: 
+         X4/X3610/M16(64.820,57.870)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_251  MP(PMOS_VTL) 
+         X4/X3610/M15(64.630,57.870)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_246  MP(PMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_smn2v)                                                  (_smn2v)
+         in1: X4/343                                               in1: XFloatingPointMultiplier_dut/Xi_0/n_753
+         out1: X4/X3610/9                                          out1: XFloatingPointMultiplier_dut/Xi_0/Xi_393/net_001
+         out2: VSS                                                 out2: VSS
+         in2: VDD                                                  ** VDD **
+         ** no similar net **                                      in2: XFloatingPointMultiplier_dut/Xi_0/n_751
+
+       Devices: 
+         X4/X3610/M2(64.820,57.215)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_170  MN(NMOS_VTL) 
+         X4/X3610/M1(64.630,57.215)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_166  MN(NMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_smp2v)                                                  (_smp2v)
+         in1: 487                                                  in1: XFloatingPointMultiplier_dut/Xi_0/n_663
+         out1: X5/X3833/9                                          out1: XFloatingPointMultiplier_dut/Xi_0/Xi_351/net_001
+         out2: VDD                                                 out2: VDD
+         in2: VSS                                                  ** VSS **
+         ** no similar net **                                      in2: XFloatingPointMultiplier_dut/Xi_0/n_698
+
+       Devices: 
+         X5/X3833/M16(81.920,41.070)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_351/M_instance_251  MP(PMOS_VTL) 
+         X5/X3833/M15(81.730,41.070)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_351/M_instance_246  MP(PMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_smn2v)                                                  (_smn2v)
+         in1: 487                                                  in1: XFloatingPointMultiplier_dut/Xi_0/n_663
+         out1: X5/X3833/9                                          out1: XFloatingPointMultiplier_dut/Xi_0/Xi_351/net_001
+         out2: VSS                                                 out2: VSS
+         in2: VSS                                                  ** VSS **
+         ** no similar net **                                      in2: XFloatingPointMultiplier_dut/Xi_0/n_698
+
+       Devices: 
+         X5/X3833/M2(81.920,40.415)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_351/M_instance_170  MN(NMOS_VTL) 
+         X5/X3833/M1(81.730,40.415)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_351/M_instance_166  MN(NMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_smp2v)                                                  (_smp2v)
+         in1: X5/374                                               in1: XFloatingPointMultiplier_dut/Xi_0/n_520
+         out1: X5/X3793/9                                          out1: XFloatingPointMultiplier_dut/Xi_0/Xi_264/net_001
+         out2: VDD                                                 out2: VDD
+         in2: VSS                                                  ** VSS **
+         ** no similar net **                                      in2: XFloatingPointMultiplier_dut/Xi_0/n_518
+
+       Devices: 
+         X5/X3793/M16(42.780,42.130)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_264/M_instance_251  MP(PMOS_VTL) 
+         X5/X3793/M15(42.590,42.130)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_264/M_instance_246  MP(PMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_smn2v)                                                  (_smn2v)
+         in1: X5/374                                               in1: XFloatingPointMultiplier_dut/Xi_0/n_520
+         out1: X5/X3793/9                                          out1: XFloatingPointMultiplier_dut/Xi_0/Xi_264/net_001
+         out2: VSS                                                 out2: VSS
+         in2: VSS                                                  ** VSS **
+         ** no similar net **                                      in2: XFloatingPointMultiplier_dut/Xi_0/n_518
+
+       Devices: 
+         X5/X3793/M2(42.780,42.785)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_264/M_instance_170  MN(NMOS_VTL) 
+         X5/X3793/M1(42.590,42.785)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_264/M_instance_166  MN(NMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_smp2v)                                                  (_smp2v)
+         in1: X1/X1327/6                                           in2: XregB/Xout_reg[31]/ci
+         out1: X1/X1327/7                                          out1: XregB/Xout_reg[31]/z3
+         out2: VDD                                                 out2: VDD
+         in2: VSS                                                  ** VSS **
+         ** no similar net **                                      in1: XregB/n_33
+
+       Devices: 
+         X1/X1327/M18(3.255,77.365)  MP(PMOS_VTL)                  XregB/Xout_reg[31]/M_MP3  MP(PMOS_VTL) 
+         X1/X1327/M17(3.065,77.365)  MP(PMOS_VTL)                  XregB/Xout_reg[31]/M_MP4  MP(PMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_smn2v)                                                  (_smn2v)
+         in1: X1/X1327/9                                           in2: XregB/Xout_reg[31]/cni
+         out1: X1/X1327/7                                          out1: XregB/Xout_reg[31]/z3
+         out2: VSS                                                 out2: VSS
+         in2: VSS                                                  ** VSS **
+         ** no similar net **                                      in1: XregB/n_33
+
+       Devices: 
+         X1/X1327/M4(3.255,76.780)  MN(NMOS_VTL)                   XregB/Xout_reg[31]/M_MN3  MN(NMOS_VTL) 
+         X1/X1327/M3(3.065,76.780)  MN(NMOS_VTL)                   XregB/Xout_reg[31]/M_MN4  MN(NMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_smp2v)                                                  (_smp2v)
+         in2: X4/X2633/6                                           in2: XregA/Xout_reg[30]/ci
+         out1: X4/X2633/7                                          out1: XregA/Xout_reg[30]/z3
+         out2: VDD                                                 out2: VDD
+         in1: VDD                                                  ** VDD **
+         ** no similar net **                                      in1: XregA/n_32
+
+       Devices: 
+         X4/X2633/M18(3.255,56.235)  MP(PMOS_VTL)                  XregA/Xout_reg[30]/M_MP3  MP(PMOS_VTL) 
+         X4/X2633/M17(3.065,56.235)  MP(PMOS_VTL)                  XregA/Xout_reg[30]/M_MP4  MP(PMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_smn2v)                                                  (_smn2v)
+         in2: X4/X2633/9                                           in2: XregA/Xout_reg[30]/cni
+         out1: X4/X2633/7                                          out1: XregA/Xout_reg[30]/z3
+         out2: VSS                                                 out2: VSS
+         in1: VDD                                                  ** VDD **
+         ** no similar net **                                      in1: XregA/n_32
+
+       Devices: 
+         X4/X2633/M4(3.255,56.820)  MN(NMOS_VTL)                   XregA/Xout_reg[30]/M_MN3  MN(NMOS_VTL) 
+         X4/X2633/M3(3.065,56.820)  MN(NMOS_VTL)                   XregA/Xout_reg[30]/M_MN4  MN(NMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_smp2v)                                                  (_smp2v)
+         in2: X9/X1552/6                                           in2: XregA/Xout_reg[2]/ci
+         out1: X9/X1552/7                                          out1: XregA/Xout_reg[2]/z3
+         out2: VDD                                                 out2: VDD
+         in1: VDD                                                  ** VDD **
+         ** no similar net **                                      in1: XregA/n_4
+
+       Devices: 
+         X9/X1552/M18(44.105,18.565)  MP(PMOS_VTL)                 XregA/Xout_reg[2]/M_MP3  MP(PMOS_VTL) 
+         X9/X1552/M17(43.915,18.565)  MP(PMOS_VTL)                 XregA/Xout_reg[2]/M_MP4  MP(PMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_smn2v)                                                  (_smn2v)
+         in2: X9/X1552/9                                           in2: XregA/Xout_reg[2]/cni
+         out1: X9/X1552/7                                          out1: XregA/Xout_reg[2]/z3
+         out2: VSS                                                 out2: VSS
+         in1: VDD                                                  ** VDD **
+         ** no similar net **                                      in1: XregA/n_4
+
+       Devices: 
+         X9/X1552/M4(44.105,17.980)  MN(NMOS_VTL)                  XregA/Xout_reg[2]/M_MN3  MN(NMOS_VTL) 
+         X9/X1552/M3(43.915,17.980)  MN(NMOS_VTL)                  XregA/Xout_reg[2]/M_MN4  MN(NMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_invv)                                                   (_invv)
+         out: 398                                                  out: XFloatingPointMultiplier_dut/Xi_0/n_1826
+         sup1: VDD                                                 sup1: VDD
+         sup2: VSS                                                 sup2: VSS
+         in: VDD                                                   ** VDD **
+         ** no similar net **                                      in: B_reg[9]
+
+       Devices: 
+         X4/X3366/M3(43.720,54.880)  MP(PMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_1368/M_i_1_0_x2_1  MP(PMOS_VTL) 
+         X4/X3366/M1(43.720,54.290)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_1368/M_i_0_0_x2_1  MN(NMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_nor2v)                                                  (_nor2v)
+         in1: X1/247                                               in2: XFloatingPointMultiplier_dut/Xi_5/n_0
+         out: X1/X1625/9                                           out: XFloatingPointMultiplier_dut/Xi_5/Xi_1/x1
+         sup1: VDD                                                 sup1: VDD
+         sup2: VSS                                                 sup2: VSS
+         in2: VDD                                                  ** VDD **
+         ** no similar net **                                      in1: XFloatingPointMultiplier_dut/n_24
+
+       Devices: 
+         X1/X1625/M12(62.180,75.730)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_5/Xi_1/M_i_8  MP(PMOS_VTL) 
+         X1/X1625/M11(61.990,75.730)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_5/Xi_1/M_i_9  MP(PMOS_VTL) 
+         X1/X1625/M4(62.180,76.510)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_5/Xi_1/M_i_6  MN(NMOS_VTL) 
+         X1/X1625/M3(61.990,76.510)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_5/Xi_1/M_i_7  MN(NMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_nand2v)                                                 (_nand2v)
+         in2: X1/247                                               in1: XFloatingPointMultiplier_dut/Xi_5/n_0
+         out: X1/X1625/10                                          out: XFloatingPointMultiplier_dut/Xi_5/Xi_1/CO_neg
+         sup1: VDD                                                 sup1: VDD
+         sup2: VSS                                                 sup2: VSS
+         in1: VDD                                                  ** VDD **
+         ** no similar net **                                      in2: XFloatingPointMultiplier_dut/n_24
+
+       Devices: 
+         X1/X1625/M6(62.740,76.510)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_5/Xi_1/M_i_13  MN(NMOS_VTL) 
+         X1/X1625/M5(62.550,76.510)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_5/Xi_1/M_i_12  MN(NMOS_VTL) 
+         X1/X1625/M14(62.740,75.730)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_5/Xi_1/M_i_15  MP(PMOS_VTL) 
+         X1/X1625/M13(62.550,75.730)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_5/Xi_1/M_i_14  MP(PMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_nor4v)                                                  (_nor4v)
+         in1: 871                                                  in1: B_reg[14]
+         in2: 873                                                  in2: B_reg[11]
+         in4: 363                                                  in4: B_reg[8]
+         out: 361                                                  out: XFloatingPointMultiplier_dut/n_1_45
+         sup1: VDD                                                 sup1: VDD
+         sup2: VSS                                                 sup2: VSS
+         in3: VDD                                                  ** VDD **
+         ** no similar net **                                      in3: B_reg[9]
+
+       Devices: 
+         X4/X3557/M7(38.005,53.520)  MP(PMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_1_63/M_i_4  MP(PMOS_VTL) 
+         X4/X3557/M6(37.815,53.520)  MP(PMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_1_63/M_i_5  MP(PMOS_VTL) 
+         X4/X3557/M5(37.625,53.520)  MP(PMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_1_63/M_i_6  MP(PMOS_VTL) 
+         X4/X3557/M4(37.435,53.520)  MP(PMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_1_63/M_i_7  MP(PMOS_VTL) 
+         X4/X3557/M3(38.005,54.110)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_1_63/M_i_0  MN(NMOS_VTL) 
+         X4/X3557/M2(37.815,54.110)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_1_63/M_i_1  MN(NMOS_VTL) 
+         X4/X3557/M1(37.625,54.110)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_1_63/M_i_2  MN(NMOS_VTL) 
+         X4/X3557/M0(37.435,54.110)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_1_63/M_i_3  MN(NMOS_VTL) 
+
+--------------------------------------------------------------------------------------------------------------
+
+       (SPUP_2_1)                                                (SPUP_2_1)
+         output: X1/231                                            output: XFloatingPointMultiplier_dut/n_1
+         input: X1/247                                             input: XFloatingPointMultiplier_dut/Xi_5/n_0
+         input: X1/X1625/9                                         input: XFloatingPointMultiplier_dut/Xi_5/Xi_1/x1
+         input: VDD                                                ** VDD **
+         ** no similar net **                                      input: XFloatingPointMultiplier_dut/n_24
+
+       Transistors:
+         X1/X1625/M8(61.415,75.920)  MP(PMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_5/Xi_1/M_i_4  MP(PMOS_VTL)
+         X1/X1625/M9(61.605,75.920)  MP(PMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_5/Xi_1/M_i_3  MP(PMOS_VTL)
+         X1/X1625/M10(61.795,75.920)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_5/Xi_1/M_i_5  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+       (SPUP_2_1)                                                (SPUP_2_1)
+         output: X4/X3593/9                                        output: XFloatingPointMultiplier_dut/Xi_0/Xi_405/net_001
+         input: X4/327                                             input: XFloatingPointMultiplier_dut/Xi_0/n_1266
+         input: X4/286                                             input: XFloatingPointMultiplier_dut/Xi_0/n_1288
+         input: VDD                                                ** VDD **
+         ** no similar net **                                      input: B_reg[9]
+
+       Transistors:
+         X4/X3593/M18(49.055,53.255)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_405/M_instance_269  MP(PMOS_VTL)
+         X4/X3593/M19(49.245,53.255)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_405/M_instance_263  MP(PMOS_VTL)
+         X4/X3593/M17(48.860,53.330)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_405/M_instance_257  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+       (SPDW_2_1)                                                (SPDW_2_1)
+         output: X4/X3593/9                                        output: XFloatingPointMultiplier_dut/Xi_0/Xi_405/net_001
+         input: X4/327                                             input: XFloatingPointMultiplier_dut/Xi_0/n_1266
+         input: X4/286                                             input: XFloatingPointMultiplier_dut/Xi_0/n_1288
+         input: VDD                                                ** VDD **
+         ** no similar net **                                      input: B_reg[9]
+
+       Transistors:
+         X4/X3593/M4(49.055,53.985)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_405/M_instance_188  MN(NMOS_VTL)
+         X4/X3593/M5(49.245,53.985)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_405/M_instance_182  MN(NMOS_VTL)
+         X4/X3593/M3(48.860,53.985)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_405/M_instance_176  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+       (SPUP_3_1)                                                (SPUP_3_1)
+         output: X4/X3593/14                                       output: XFloatingPointMultiplier_dut/Xi_0/Xi_405/net_005
+         input: X4/286                                             input: XFloatingPointMultiplier_dut/Xi_0/n_1288
+         input: X4/327                                             input: XFloatingPointMultiplier_dut/Xi_0/n_1266
+         input: X4/X3593/9                                         input: XFloatingPointMultiplier_dut/Xi_0/Xi_405/net_001
+         input: VDD                                                ** VDD **
+         ** no similar net **                                      input: B_reg[9]
+
+       Transistors:
+         X4/X3593/M20(49.585,53.205)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_405/M_instance_309  MP(PMOS_VTL)
+         X4/X3593/M21(49.775,53.205)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_405/M_instance_297  MP(PMOS_VTL)
+         X4/X3593/M22(49.965,53.205)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_405/M_instance_303  MP(PMOS_VTL)
+         X4/X3593/M23(50.155,53.205)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_405/M_instance_290  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+       (SPDW_3_1)                                                (SPDW_3_1)
+         output: X4/X3593/14                                       output: XFloatingPointMultiplier_dut/Xi_0/Xi_405/net_005
+         input: X4/286                                             input: XFloatingPointMultiplier_dut/Xi_0/n_1288
+         input: X4/327                                             input: XFloatingPointMultiplier_dut/Xi_0/n_1266
+         input: X4/X3593/9                                         input: XFloatingPointMultiplier_dut/Xi_0/Xi_405/net_001
+         input: VDD                                                ** VDD **
+         ** no similar net **                                      input: B_reg[9]
+
+       Transistors:
+         X4/X3593/M6(49.585,54.110)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_405/M_instance_227  MN(NMOS_VTL)
+         X4/X3593/M7(49.775,54.110)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_405/M_instance_215  MN(NMOS_VTL)
+         X4/X3593/M8(49.965,54.110)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_405/M_instance_221  MN(NMOS_VTL)
+         X4/X3593/M9(50.155,54.110)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_405/M_instance_209  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+       (SPUP_2_1)                                                (SPUP_2_1)
+         output: X4/X3610/9                                        output: XFloatingPointMultiplier_dut/Xi_0/Xi_393/net_001
+         input: X4/343                                             input: XFloatingPointMultiplier_dut/Xi_0/n_753
+         input: X4/293                                             input: XFloatingPointMultiplier_dut/Xi_0/n_780
+         input: VDD                                                ** VDD **
+         ** no similar net **                                      input: XFloatingPointMultiplier_dut/Xi_0/n_751
+
+       Transistors:
+         X4/X3610/M18(65.205,57.945)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_269  MP(PMOS_VTL)
+         X4/X3610/M19(65.395,57.945)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_263  MP(PMOS_VTL)
+         X4/X3610/M17(65.010,57.870)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_257  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+       (SPDW_2_1)                                                (SPDW_2_1)
+         output: X4/X3610/9                                        output: XFloatingPointMultiplier_dut/Xi_0/Xi_393/net_001
+         input: X4/343                                             input: XFloatingPointMultiplier_dut/Xi_0/n_753
+         input: X4/293                                             input: XFloatingPointMultiplier_dut/Xi_0/n_780
+         input: VDD                                                ** VDD **
+         ** no similar net **                                      input: XFloatingPointMultiplier_dut/Xi_0/n_751
+
+       Transistors:
+         X4/X3610/M4(65.205,57.215)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_188  MN(NMOS_VTL)
+         X4/X3610/M5(65.395,57.215)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_182  MN(NMOS_VTL)
+         X4/X3610/M3(65.010,57.215)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_176  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+       (SPUP_3_1)                                                (SPUP_3_1)
+         output: X4/X3610/14                                       output: XFloatingPointMultiplier_dut/Xi_0/Xi_393/net_005
+         input: X4/293                                             input: XFloatingPointMultiplier_dut/Xi_0/n_780
+         input: X4/343                                             input: XFloatingPointMultiplier_dut/Xi_0/n_753
+         input: X4/X3610/9                                         input: XFloatingPointMultiplier_dut/Xi_0/Xi_393/net_001
+         input: VDD                                                ** VDD **
+         ** no similar net **                                      input: XFloatingPointMultiplier_dut/Xi_0/n_751
+
+       Transistors:
+         X4/X3610/M20(65.735,57.995)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_309  MP(PMOS_VTL)
+         X4/X3610/M21(65.925,57.995)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_297  MP(PMOS_VTL)
+         X4/X3610/M22(66.115,57.995)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_303  MP(PMOS_VTL)
+         X4/X3610/M23(66.305,57.995)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_290  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+       (SPDW_3_1)                                                (SPDW_3_1)
+         output: X4/X3610/14                                       output: XFloatingPointMultiplier_dut/Xi_0/Xi_393/net_005
+         input: X4/293                                             input: XFloatingPointMultiplier_dut/Xi_0/n_780
+         input: X4/343                                             input: XFloatingPointMultiplier_dut/Xi_0/n_753
+         input: X4/X3610/9                                         input: XFloatingPointMultiplier_dut/Xi_0/Xi_393/net_001
+         input: VDD                                                ** VDD **
+         ** no similar net **                                      input: XFloatingPointMultiplier_dut/Xi_0/n_751
+
+       Transistors:
+         X4/X3610/M6(65.735,57.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_227  MN(NMOS_VTL)
+         X4/X3610/M7(65.925,57.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_215  MN(NMOS_VTL)
+         X4/X3610/M8(66.115,57.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_221  MN(NMOS_VTL)
+         X4/X3610/M9(66.305,57.090)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_393/M_instance_209  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+       (SPUP_2_1)                                                (SPUP_2_1)
+         output: X4/X3629/9                                        output: XFloatingPointMultiplier_dut/Xi_0/Xi_368/net_001
+         input: 407                                                input: XFloatingPointMultiplier_dut/Xi_0/n_699
+         input: X4/346                                             input: XFloatingPointMultiplier_dut/Xi_0/n_732
+         input: VSS                                                ** VSS **
+         ** no similar net **                                      input: XFloatingPointMultiplier_dut/Xi_0/n_701
+
+       Transistors:
+         X4/X3629/M18(83.475,55.145)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_368/M_instance_269  MP(PMOS_VTL)
+         X4/X3629/M19(83.285,55.145)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_368/M_instance_263  MP(PMOS_VTL)
+         X4/X3629/M17(83.670,55.070)  MP(PMOS_VTL)                 XFloatingPointMultiplier_dut/Xi_0/Xi_368/M_instance_257  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+       (SPDW_2_1)                                                (SPDW_2_1)
+         output: X4/X3629/9                                        output: XFloatingPointMultiplier_dut/Xi_0/Xi_368/net_001
+         input: 407                                                input: XFloatingPointMultiplier_dut/Xi_0/n_699
+         input: X4/346                                             input: XFloatingPointMultiplier_dut/Xi_0/n_732
+         input: VSS                                                ** VSS **
+         ** no similar net **                                      input: XFloatingPointMultiplier_dut/Xi_0/n_701
+
+       Transistors:
+         X4/X3629/M4(83.475,54.415)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_368/M_instance_188  MN(NMOS_VTL)
+         X4/X3629/M5(83.285,54.415)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_368/M_instance_182  MN(NMOS_VTL)
+         X4/X3629/M3(83.670,54.415)  MN(NMOS_VTL)                  XFloatingPointMultiplier_dut/Xi_0/Xi_368/M_instance_176  MN(NMOS_VTL)
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      0 sec
+Total Elapsed Time:  0 sec
