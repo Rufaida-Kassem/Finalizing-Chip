@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1672799762 1672799767
+lvs_ExtOutFile RUNDIR /home/vlsi/Desktop/Mini_Project_2__/work/calibre
+lvs_ExtOutFile RULES_FILE /home/vlsi/Desktop/Mini_Project_2__/work/calibre/_calibre-lvs.rule_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /home/vlsi/Desktop/Mini_Project_2__/work/calibre/fpa_with_regisers.sp
+lvs_ExtOutFile EXTRACTION_REPORT fpa_with_regisers.lvs.report.ext

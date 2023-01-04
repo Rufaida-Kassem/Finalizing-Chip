@@ -1,0 +1,68 @@
+//  v2lvs v2020.1_25.14    Mon Feb 3 16:40:08 PST 2020
+//
+//  Copyright (c) 1992, 1993 Regents of the University of California
+//         All rights reserved.
+//
+//        Copyright Mentor Graphics Corporation 1996-2020
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+Running /home/vlsi/Installation/Calibre/aoi_cal_2020.1_25.14/pkgs/icv/pvt/v2lvs -v /home/vlsi/Desktop/Mini_Project_2__/work/output/fpa_with_regisers.power.v.gz -o /home/vlsi/Desktop/Mini_Project_2__/work/calibre/_fpa_with_regisers.power.v.gz.sp -w 2
+
+Info: Creating Design Database ...
+Info: Converting Design ...
+Warning: No module declaration for module AND2_X1 first encountered in module registerNbits
+Warning: No module declaration for module INV_X1 first encountered in module registerNbits
+Warning: No module declaration for module OR2_X1 first encountered in module registerNbits
+Warning: No module declaration for module DFF_X1 first encountered in module registerNbits
+Warning: No module declaration for module CLKGATETST_X8 first encountered in module registerNbits
+Warning: No module declaration for module CLKBUF_X3 first encountered in module registerNbits
+Warning: No module declaration for module XNOR2_X1 first encountered in module CLA_4bit
+Warning: No module declaration for module OAI22_X1 first encountered in module CLA_4bit
+Warning: No module declaration for module NOR2_X1 first encountered in module CLA_4bit
+Warning: No module declaration for module NAND2_X1 first encountered in module CLA_4bit
+Warning: No module declaration for module AOI22_X1 first encountered in module CLA_4bit
+Warning: No module declaration for module OAI21_X1 first encountered in module CLA_4bit
+Warning: No module declaration for module FA_X1 first encountered in module CLA_4bit
+Warning: No module declaration for module OAI211_X1 first encountered in module CLA_4bit__0_114
+Warning: No module declaration for module AOI21_X1 first encountered in module CLA_4bit__0_114
+Warning: No module declaration for module XOR2_X1 first encountered in module CLA_adder
+Warning: No module declaration for module NOR2_X2 first encountered in module addition_normaliser
+Warning: No module declaration for module AOI221_X1 first encountered in module addition_normaliser
+Warning: No module declaration for module AOI211_X1 first encountered in module addition_normaliser
+Warning: No module declaration for module NAND3_X1 first encountered in module addition_normaliser
+Warning: No module declaration for module OAI33_X1 first encountered in module addition_normaliser
+Warning: No module declaration for module NOR3_X1 first encountered in module addition_normaliser
+Warning: No module declaration for module OAI221_X1 first encountered in module addition_normaliser
+Warning: No module declaration for module NAND4_X1 first encountered in module addition_normaliser
+Warning: No module declaration for module NOR4_X1 first encountered in module addition_normaliser
+Warning: No module declaration for module AOI222_X1 first encountered in module addition_normaliser
+Warning: No module declaration for module AND4_X1 first encountered in module addition_normaliser
+Warning: No module declaration for module OAI222_X1 first encountered in module addition_normaliser
+Warning: No module declaration for module OR3_X1 first encountered in module addition_normaliser
+Warning: No module declaration for module AOI21_X2 first encountered in module addition_normaliser
+Warning: No module declaration for module AND3_X1 first encountered in module addition_normaliser
+Warning: No module declaration for module HA_X1 first encountered in module addition_normaliser
+Warning: No module declaration for module DLH_X1 first encountered in module addition_normaliser
+Warning: No module declaration for module NAND2_X2 first encountered in module adder
+Warning: No module declaration for module INV_X2 first encountered in module adder
+Warning: No module declaration for module AND2_X2 first encountered in module adder
+Warning: No module declaration for module AOI222_X2 first encountered in module adder
+Warning: No module declaration for module NOR2_X4 first encountered in module adder
+Warning: No module declaration for module OAI21_X4 first encountered in module adder
+Warning: No module declaration for module XNOR2_X2 first encountered in module adder
+Warning: No module declaration for module OAI21_X2 first encountered in module adder
+Warning: No module declaration for module NOR3_X2 first encountered in module adder
+Warning: No module declaration for module CLKBUF_X1 first encountered in module adder
+Warning: No module declaration for module NOR4_X2 first encountered in module fpa
+Warning: No module declaration for module OR4_X1 first encountered in module fpa
+Warning: No module declaration for module BUF_X2 first encountered in module fpa
+
+CPU TIME = 0  REAL TIME = 1  MALLOC = 6/6/6
