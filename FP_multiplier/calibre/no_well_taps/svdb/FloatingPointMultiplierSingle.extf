@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1672798377 1672798385
+lvs_ExtOutFile RUNDIR /home/vlsi/Desktop/FPMwork/calibre
+lvs_ExtOutFile RULES_FILE /home/vlsi/Desktop/FPMwork/calibre/_calibre-lvs.rule_
+lvs_ExtInfoExtSummary {0 0 2 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /home/vlsi/Desktop/FPMwork/calibre/FloatingPointMultiplierSingle.sp
+lvs_ExtOutFile EXTRACTION_REPORT FloatingPointMultiplierSingle.lvs.report.ext
