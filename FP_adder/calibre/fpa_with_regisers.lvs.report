@@ -1,0 +1,2732 @@
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         fpa_with_regisers.lvs.report
+LAYOUT NAME:              /home/vlsi/Desktop/Mini_Project_2__/work/calibre/fpa_with_regisers.sp ('fpa_with_regisers')
+SOURCE NAME:              _source.net_ ('fpa_with_regisers')
+RULE FILE:                /home/vlsi/Desktop/Mini_Project_2__/work/calibre/_calibre-lvs.rule_
+RULE FILE TITLE:          LVS Rule File for FreePDK45
+CREATION TIME:            Wed Jan  4 02:39:02 2023
+CURRENT DIRECTORY:        /home/vlsi/Desktop/Mini_Project_2__/work/calibre
+USER NAME:                vlsi
+CALIBRE VERSION:          v2020.1_25.14    Mon Feb 3 16:40:25 PST 2020
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of nets.
+  Error:    Different numbers of instances.
+  Error:    Connectivity errors.
+  Error:    Property errors.
+  Warning:  Ambiguity points were found and resolved arbitrarily.
+  Warning:  LVS property resolution maximum exceeded.
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  INCORRECT      fpa_with_regisers             fpa_with_regisers
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   LVS COMPONENT TYPE PROPERTY            element
+   LVS COMPONENT SUBTYPE PROPERTY         model
+   // LVS PIN NAME PROPERTY
+   LVS POWER NAME                         "VCC"
+   LVS GROUND NAME                        "GROUND"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    ALL
+   // LVS HCELL REPORT
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   NO
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            YES
+   LVS ALL CAPACITOR PINS SWAPPABLE       NO
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                NO
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS REVERSE WL                         NO
+   LVS SPICE PREFER PINS                  NO
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   // LVS SPICE EXCLUDE CELL SOURCE
+   // LVS SPICE EXCLUDE CELL LAYOUT
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            NO
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            YES
+   SOURCE CASE                            YES
+   LVS COMPARE CASE                       NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     50
+   LVS PROPERTY RESOLUTION MAXIMUM        32
+   // LVS SIGNATURE MAXIMUM
+   // LVS FILTER UNUSED OPTION
+   // LVS REPORT OPTION
+   LVS REPORT UNITS                       YES
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+   // LVS IGNORE DEVICE PIN
+   // LVS PREFER NETS FILTER SOURCE
+   // LVS PREFER NETS FILTER LAYOUT
+   LVS PREFER PORT NETS                   NO
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  YES
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             YES
+   LVS REDUCE SPLIT GATES                 YES
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           YES
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Trace Property
+
+   TRACE PROPERTY  mn(nmos_vtl)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vtl)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vtl)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vtl)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vth)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vth)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vth)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vth)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vtg)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vtg)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vtg)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vtg)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_thkox)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_thkox)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_thkox)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_thkox)  w w 4e-09 ABSOLUTE
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of nets (see below).
+  Error:    Different numbers of instances (see below).
+  Error:    Connectivity errors.
+  Error:    Property errors.
+  Warning:  Ambiguity points were found and resolved arbitrarily.
+  Warning:  LVS property resolution maximum exceeded.
+
+LAYOUT CELL NAME:         fpa_with_regisers
+SOURCE CELL NAME:         fpa_with_regisers
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:            103       102    *
+
+ Nets:            7677      7636    *
+
+ Instances:       7289      7289         MN (4 pins)
+                  7289      7289         MP (4 pins)
+                ------    ------
+ Total Inst:     14578     14578
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:            102       102
+
+ Nets:            3247      3195    *
+
+ Instances:        169       169         MN (4 pins)
+                   140       140         MP (4 pins)
+                   124       124         SPMN_2_1 (5 pins)
+                    25        25         SPMN_2_1_1 (6 pins)
+                    51        51         SPMN_2_2 (6 pins)
+                    34        34         SPMN_2_2_1 (7 pins)
+                    21        21         SPMN_2_2_2 (8 pins)
+                    18        18         SPMN_3_1 (6 pins)
+                    23        23         SPMN_3_3 (8 pins)
+                   149       149         SPMP_2_1 (5 pins)
+                    26        26         SPMP_2_1_1 (6 pins)
+                   198       198         SPMP_2_2 (6 pins)
+                    35        35         SPMP_2_2_1 (7 pins)
+                    85        85         SPMP_2_2_2 (8 pins)
+                    18        18         SPMP_3_1 (6 pins)
+                     3         0    *    _invb (6 pins)
+                  1550      1550         _invv (4 pins)
+                    11        11         _invx2v (4 pins)
+                     0         1    *    _invx3v (4 pins)
+                   279       279         _nand2v (5 pins)
+                    42        42         _nand3v (6 pins)
+                    26        26         _nand4v (7 pins)
+                    80        80         _nor2v (5 pins)
+                    22        22         _nor3v (6 pins)
+                    23        23         _nor4v (7 pins)
+                    26        26         _pmn2v (4 pins)
+                    25        25         _pmp2v (4 pins)
+                  1538      1538         _smn2v (4 pins)
+                    18        18         _smn3v (5 pins)
+                  1018      1018         _smp2v (4 pins)
+                    70        70         _smp3v (5 pins)
+                ------    ------
+ Total Inst:      5847      5845
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                                 INCORRECT OBJECTS
+**************************************************************************************************************
+
+
+LEGEND:
+-------
+
+  ne  = Naming Error (same layout name found in source
+        circuit, but object was matched otherwise).
+
+
+**************************************************************************************************************
+                                   INCORRECT NETS
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+  1    Net VSS                                                   VSS
+       --- 4095 Connections On This Net ---                      --- 4262 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_invb):sup2                                              ** missing connection **
+         X2/X2534/M0(64.820,45.710):d
+       
+       
+       (_invb):sup2                                              ** missing connection **
+         X3/X3041/M0(52.280,40.290):d
+       
+       
+       (_invb):sup2                                              ** missing connection **
+         X3/X3039/M0(49.050,40.110):d
+       
+       
+       ** missing connection **                                  (_invx3v):sup2
+                                                                   XoutReg/XCTS_L2_c_tid0_3/M_i_0_2:b
+                                                                   XoutReg/XCTS_L2_c_tid0_3/M_i_0_2:s
+                                                                   XoutReg/XCTS_L2_c_tid0_3/M_i_2_1:b
+                                                                   XoutReg/XCTS_L2_c_tid0_3/M_i_2_1:d
+                                                                   XoutReg/Xclk_gate_out_reg/M_i_63_13_29_4:b
+                                                                   XoutReg/Xclk_gate_out_reg/M_i_63_13_29_4:s
+       
+       
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_0/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_1/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_2/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_3/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_4/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_5/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_6/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_7/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_8/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_9/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_10/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_11/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_12/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_13/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_14/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_15/M_i_13:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_16/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_18/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_19/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_26/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_27/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_31/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_34/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_36/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_42/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_45/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_46/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_55/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_62/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_64/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_65/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_75/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_77/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_81/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_90/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_101/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_108/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_109/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_115/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_120/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_124/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_128/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_129/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_130/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_135/M_i_2:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_138/M_i_2:b
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  2    Net VDD                                                   VDD
+       --- 3801 Connections On This Net ---                      --- 3939 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_invb):sup1                                              ** missing connection **
+         X2/X2534/M8(64.820,44.805):d
+       
+       
+       (_invb):sup1                                              ** missing connection **
+         X3/X3041/M8(52.280,41.195):d
+       
+       
+       (_invb):sup1                                              ** missing connection **
+         X3/X3039/M8(49.050,39.205):d
+       
+       
+       ** missing connection **                                  (_invx3v):sup1
+                                                                   XoutReg/XCTS_L2_c_tid0_3/M_i_1_2:b
+                                                                   XoutReg/XCTS_L2_c_tid0_3/M_i_1_2:s
+                                                                   XoutReg/XCTS_L2_c_tid0_3/M_i_3_1:b
+                                                                   XoutReg/XCTS_L2_c_tid0_3/M_i_3_1:d
+                                                                   XoutReg/Xclk_gate_out_reg/M_i_133_10_28_7:b
+                                                                   XoutReg/Xclk_gate_out_reg/M_i_133_10_28_7:s
+       
+       
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_33/M_i_7:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_35/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_47/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_68/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_72/M_i_7:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_74/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_80/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_88/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_89/M_i_7:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_94/M_i_7:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_107/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_139/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_140/M_i_42:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_144/M_i_7:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_159/M_i_7:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_187/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_189/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_199/M_i_7:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_215/M_i_7:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_217/M_i_7:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_234/M_i_7:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_246/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_268/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_311/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_330/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_338/M_i_7:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_350/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_367/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_373/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_380/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_386/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_388/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_395/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_413/M_i_7:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_415/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_417/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_433/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_454/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_459/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_461/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_472/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_476/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_484/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xnorm1/Xi_0_486/M_i_5:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xc1/Xgenblk1_0_stage1/Xi_0_7/M_i_42:b
+       ** missing connection **                                  Xfpa_obj/XA1/Xc1/Xgenblk1_0_stage1/Xi_0_8/M_i_42:b
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  3    Net 46                                                    XregB/CTS_n_tid1_8
+       --- 17 Connections On This Net ---                        --- 17 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_invb):in                                                ** missing connection **
+         X0/X1555/M6(54.020,62.345):g
+         X0/X1555/M20(54.020,61.730):g
+       
+       
+       (_invb):in                                                ** missing connection **
+         X0/X1556/M6(54.020,68.455):g
+         X0/X1556/M20(54.020,69.070):g
+       
+       
+       (_invb):in                                                ** missing connection **
+         X1/X1874/M6(54.950,56.745):g
+         X1/X1874/M20(54.950,56.130):g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   XregB/Xout_reg[6]/M_MN1:g
+                                                                   XregB/Xout_reg[6]/M_MP1:g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   XregB/Xout_reg[7]/M_MN1:g
+                                                                   XregB/Xout_reg[7]/M_MP1:g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   XregB/Xout_reg[9]/M_MN1:g
+                                                                   XregB/Xout_reg[9]/M_MP1:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  4    Net 290                                                   XoutReg/CTS_n_tid0_2
+       --- 33 Connections On This Net ---                        --- 33 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_invb):out                                               ** missing connection **
+         X3/X3089/M3(36.485,40.110):d
+         X3/X3089/M7(36.485,39.520):d
+       
+       
+       ** missing connection **                                  (_invx3v):out
+                                                                   XoutReg/XCTS_L2_c_tid0_3/M_i_0_2:d
+                                                                   XoutReg/XCTS_L2_c_tid0_3/M_i_1_2:d
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  5    Net 96                                                    XregA/CTS_n_tid0_8
+       --- 19 Connections On This Net ---                        --- 19 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_invb):in                                                ** missing connection **
+         X0/X1538/M6(22.670,65.145):g
+         X0/X1538/M20(22.670,64.530):g
+       
+       
+       (_invb):in                                                ** missing connection **
+         X0/X1539/M6(24.190,68.455):g
+         X0/X1539/M20(24.190,69.070):g
+       
+       
+       (_invb):in                                                ** missing connection **
+         X0/X1541/M6(29.130,65.655):g
+         X0/X1541/M20(29.130,66.270):g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   XregA/Xout_reg[12]/M_MN1:g
+                                                                   XregA/Xout_reg[12]/M_MP1:g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   XregA/Xout_reg[2]/M_MN1:g
+                                                                   XregA/Xout_reg[2]/M_MP1:g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   XregA/Xout_reg[13]/M_MN1:g
+                                                                   XregA/Xout_reg[13]/M_MP1:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  6    Net 104                                                   XregA/n_0_0
+       --- 33 Connections On This Net ---                        --- 33 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_invb):out                                               ** missing connection **
+         X7/X1148/M0(40.185,1.090):d
+         X7/X1148/M1(40.185,1.680):d
+       
+       
+       ** missing connection **                                  (_invv):out
+                                                                   XregA/Xi_0_1/M_i_0:d
+                                                                   XregA/Xi_0_1/M_i_1:d
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  7    Net 90                                                    XregB/n_0_0
+       --- 33 Connections On This Net ---                        --- 33 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_invb):out                                               ** missing connection **
+         X7/X1147/M0(38.475,3.710):d
+         X7/X1147/M1(38.475,3.120):d
+       
+       
+       ** missing connection **                                  (_invv):out
+                                                                   XregB/Xi_0_1/M_i_0:d
+                                                                   XregB/Xi_0_1/M_i_1:d
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  8    Net 180                                                   Xfpa_obj/XA1/hfn_ipo_n6
+       --- 46 Connections On This Net ---                        --- 46 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_invb):in                                                ** missing connection **
+         X2/X2519/M0(50.950,45.710):g
+         X2/X2519/M8(50.950,44.805):g
+       
+       
+       (_invb):in                                                ** missing connection **
+         X2/X2516/M0(47.340,48.690):g
+         X2/X2516/M8(47.340,49.595):g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   Xfpa_obj/XA1/Xi_m_reg[5]/M_i_0:g
+                                                                   Xfpa_obj/XA1/Xi_m_reg[5]/M_i_48:g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   Xfpa_obj/XA1/Xi_m_reg[1]/M_i_0:g
+                                                                   Xfpa_obj/XA1/Xi_m_reg[1]/M_i_48:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  9    Net 189                                                   Xfpa_obj/XA1/Xnorm1/n_8
+       --- 33 Connections On This Net ---                        --- 33 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_invb):in                                                ** missing connection **
+         X2/X2527/M0(58.740,45.890):g
+         X2/X2527/M8(58.740,46.795):g
+       
+       
+       (_invb):in                                                ** missing connection **
+         X2/X2529/M0(61.060,48.510):g
+         X2/X2529/M8(61.060,47.605):g
+       
+       
+       (_invb):in                                                ** missing connection **
+         X2/X2530/M0(60.450,48.690):g
+         X2/X2530/M8(60.450,49.595):g
+       
+       
+       (_invb):in                                                ** missing connection **
+         X2/X2534/M0(64.820,45.710):g
+         X2/X2534/M8(64.820,44.805):g
+       
+       
+       (_invb):in                                                ** missing connection **
+         X4/X2463/M0(36.320,26.110):g
+         X4/X2463/M8(36.320,25.205):g
+       
+       
+       (_invb):in                                                ** missing connection **
+         X3/X3041/M0(52.280,40.290):g
+         X3/X3041/M8(52.280,41.195):g
+       
+       
+       (_invb):in                                                ** missing connection **
+         X3/X3039/M0(49.050,40.110):g
+         X3/X3039/M8(49.050,39.205):g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   Xfpa_obj/XA1/Xnorm1/Xout_m_reg[3]/M_i_0:g
+                                                                   Xfpa_obj/XA1/Xnorm1/Xout_m_reg[3]/M_i_48:g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   Xfpa_obj/XA1/Xnorm1/Xout_e_reg[6]/M_i_0:g
+                                                                   Xfpa_obj/XA1/Xnorm1/Xout_e_reg[6]/M_i_48:g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   Xfpa_obj/XA1/Xnorm1/Xout_e_reg[7]/M_i_0:g
+                                                                   Xfpa_obj/XA1/Xnorm1/Xout_e_reg[7]/M_i_48:g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   Xfpa_obj/XA1/Xnorm1/Xout_m_reg[11]/M_i_0:g
+                                                                   Xfpa_obj/XA1/Xnorm1/Xout_m_reg[11]/M_i_48:g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   Xfpa_obj/XA1/Xnorm1/Xout_m_reg[21]/M_i_0:g
+                                                                   Xfpa_obj/XA1/Xnorm1/Xout_m_reg[21]/M_i_48:g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   Xfpa_obj/XA1/Xnorm1/Xout_m_reg[19]/M_i_0:g
+                                                                   Xfpa_obj/XA1/Xnorm1/Xout_m_reg[19]/M_i_48:g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   Xfpa_obj/XA1/Xnorm1/Xout_m_reg[12]/M_i_0:g
+                                                                   Xfpa_obj/XA1/Xnorm1/Xout_m_reg[12]/M_i_48:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 10    Net 225                                                   XregB/CTS_n_tid1_7
+       --- 17 Connections On This Net ---                        --- 17 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_invb):in                                                ** missing connection **
+         X5/X2297/M6(33.880,20.345):g
+         X5/X2297/M20(33.880,19.730):g
+       
+       
+       (_invb):in                                                ** missing connection **
+         X3/X2251/M6(42.430,37.145):g
+         X3/X2251/M20(42.430,36.530):g
+       
+       
+       (_invb):in                                                ** missing connection **
+         X3/X2252/M6(43.380,40.455):g
+         X3/X2252/M20(43.380,41.070):g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   XregB/Xout_reg[18]/M_MN1:g
+                                                                   XregB/Xout_reg[18]/M_MP1:g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   XregB/Xout_reg[17]/M_MN1:g
+                                                                   XregB/Xout_reg[17]/M_MP1:g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   XregB/Xout_reg[16]/M_MN1:g
+                                                                   XregB/Xout_reg[16]/M_MP1:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 11    Net 235                                                   XregB/n_31
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in1                                              ** missing connection **
+         X2/X1932/M4(43.345,43.180):g
+       
+       
+       (_smp2b):in1                                              ** missing connection **
+         X2/X1932/M18(43.345,43.765):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[29]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[29]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 12    Net 287                                                   Xfpa_obj/hfn_ipo_n9
+       --- 41 Connections On This Net ---                        --- 41 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_invb):in                                                ** missing connection **
+         X4/X2456/M0(13.140,28.910):g
+         X4/X2456/M8(13.140,28.005):g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   Xfpa_obj/Xadder_a_in_reg[22]/M_i_0:g
+                                                                   Xfpa_obj/Xadder_a_in_reg[22]/M_i_48:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 13    Net 294                                                   Xfpa_obj/XA1/hfn_ipo_n5
+       --- 46 Connections On This Net ---                        --- 46 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_invb):in                                                ** missing connection **
+         X7/X1191/M0(38.980,3.890):g
+         X7/X1191/M8(38.980,4.795):g
+       
+       
+       (_invb):in                                                ** missing connection **
+         X5/X3128/M0(35.600,20.690):g
+         X5/X3128/M8(35.600,21.595):g
+       
+       
+       (_invb):in                                                ** missing connection **
+         X5/X3126/M0(33.700,15.090):g
+         X5/X3126/M8(33.700,15.995):g
+       
+       
+       (_invb):in                                                ** missing connection **
+         X5/X3125/M0(31.570,23.310):g
+         X5/X3125/M8(31.570,22.405):g
+       
+       
+       (_invb):in                                                ** missing connection **
+         X6/X2395/M0(40.880,6.690):g
+         X6/X2395/M8(40.880,7.595):g
+       
+       
+       (_invb):in                                                ** missing connection **
+         X6/X2394/M0(40.310,9.490):g
+         X6/X2394/M8(40.310,10.395):g
+       
+       
+       (_invb):in                                                ** missing connection **
+         X6/X2393/M0(39.740,14.910):g
+         X6/X2393/M8(39.740,14.005):g
+       
+       
+       (_invb):in                                                ** missing connection **
+         X6/X2392/M0(39.400,14.910):g
+         X6/X2392/M8(39.400,14.005):g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   Xfpa_obj/XA1/Xi_m_reg[17]/M_i_0:g
+                                                                   Xfpa_obj/XA1/Xi_m_reg[17]/M_i_48:g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   Xfpa_obj/XA1/Xi_m_reg[21]/M_i_0:g
+                                                                   Xfpa_obj/XA1/Xi_m_reg[21]/M_i_48:g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   Xfpa_obj/XA1/Xi_e_reg[7]/M_i_0:g
+                                                                   Xfpa_obj/XA1/Xi_e_reg[7]/M_i_48:g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   Xfpa_obj/XA1/Xi_e_reg[1]/M_i_0:g
+                                                                   Xfpa_obj/XA1/Xi_e_reg[1]/M_i_48:g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   Xfpa_obj/XA1/Xi_e_reg[2]/M_i_0:g
+                                                                   Xfpa_obj/XA1/Xi_e_reg[2]/M_i_48:g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   Xfpa_obj/XA1/Xi_e_reg[3]/M_i_0:g
+                                                                   Xfpa_obj/XA1/Xi_e_reg[3]/M_i_48:g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   Xfpa_obj/XA1/Xi_e_reg[4]/M_i_0:g
+                                                                   Xfpa_obj/XA1/Xi_e_reg[4]/M_i_48:g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   Xfpa_obj/XA1/Xi_e_reg[5]/M_i_0:g
+                                                                   Xfpa_obj/XA1/Xi_e_reg[5]/M_i_48:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 14    Net 256                                                   XregB/n_30
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X4/X1818/M4(1.925,31.980):g
+       
+       
+       (_smp2b):in1                                              ** missing connection **
+         X4/X1818/M18(1.925,32.565):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[28]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[28]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 15    Net 283                                                   XregA/CTS_n_tid0_7
+       --- 15 Connections On This Net ---                        --- 15 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_invb):in                                                ** missing connection **
+         X6/X1807/M6(22.480,6.855):g
+         X6/X1807/M20(22.480,7.470):g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   XregA/Xout_reg[19]/M_MN1:g
+                                                                   XregA/Xout_reg[19]/M_MP1:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 16    Net 431                                                   XregB/n_29
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in1                                              ** missing connection **
+         X5/X2298/M4(36.125,17.980):g
+       
+       
+       (_smp2b):in1                                              ** missing connection **
+         X5/X2298/M18(36.125,18.565):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[27]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[27]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 17    Net 704                                                   XregB/n_28
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in1                                              ** missing connection **
+         X5/X2296/M4(30.615,17.620):g
+       
+       
+       (_smp2b):in1                                              ** missing connection **
+         X5/X2296/M18(30.615,17.035):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[26]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[26]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 18    Net 430                                                   XregB/n_27
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in1                                              ** missing connection **
+         X5/X2297/M4(33.275,20.420):g
+       
+       
+       (_smp2b):in1                                              ** missing connection **
+         X5/X2297/M18(33.275,19.835):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[25]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[25]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 19    Net 684                                                   XregB/n_25
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in1                                              ** missing connection **
+         X6/X1808/M4(26.815,6.780):g
+       
+       
+       (_smp2b):in1                                              ** missing connection **
+         X6/X1808/M18(26.815,7.365):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[23]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[23]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 20    Net 477                                                   XregB/n_23
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in1                                              ** missing connection **
+         X6/X1803/M4(11.235,9.220):g
+       
+       
+       (_smp2b):in1                                              ** missing connection **
+         X6/X1803/M18(11.235,8.635):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[21]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[21]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 21    Net 683                                                   XregB/n_22
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in1                                              ** missing connection **
+         X6/X1807/M4(21.875,6.780):g
+       
+       
+       (_smp2b):in1                                              ** missing connection **
+         X6/X1807/M18(21.875,7.365):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[20]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[20]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 22    Net 478                                                   XregB/n_21
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in1                                              ** missing connection **
+         X6/X1806/M4(16.225,6.780):g
+       
+       
+       (_smp2b):in1                                              ** missing connection **
+         X6/X1806/M18(16.225,7.365):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[19]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[19]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 23    Net X0/151                                                XregB/n_20
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1534/M4(13.565,65.580):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1534/M18(13.565,66.165):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[18]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[18]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 24    Net X0/218                                                XregB/n_19
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1535/M4(14.845,68.020):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1535/M18(14.845,67.435):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[17]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[17]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 25    Net X0/219                                                XregB/n_18
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1536/M4(15.415,65.580):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1536/M18(15.415,66.165):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[16]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[16]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 26    Net X0/209                                                XregB/n_17
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1538/M4(22.065,65.220):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1538/M18(22.065,64.635):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[15]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[15]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 27    Net X0/233                                                XregB/n_16
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1537/M4(19.455,68.020):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1537/M18(19.455,67.435):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[14]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[14]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 28    Net X0/210                                                XregB/n_15
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1539/M4(23.585,68.380):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1539/M18(23.585,68.965):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[13]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[13]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 29    Net X0/220                                                XregB/n_14
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1540/M4(25.295,65.580):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1540/M18(25.295,66.165):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[12]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[12]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 30    Net X0/221                                                XregB/n_13
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1541/M4(28.525,65.580):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1541/M18(28.525,66.165):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[11]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[11]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 31    Net X0/211                                                XregB/n_12
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1543/M4(31.565,68.380):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1543/M18(31.565,68.965):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[10]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[10]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 32    Net X0/160                                                XregB/n_11
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1542/M4(31.375,65.220):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1542/M18(31.375,64.635):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[9]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[9]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 33    Net X0/235                                                XregB/n_10
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1544/M4(35.795,68.020):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1544/M18(35.795,67.435):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[8]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[8]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 34    Net X0/222                                                XregB/n_9
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1546/M4(37.645,68.020):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1546/M18(37.645,67.435):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[7]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[7]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 35    Net X0/191                                                XregB/n_8
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1548/M4(42.205,65.220):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1548/M18(42.205,64.635):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[6]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[6]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 36    Net X0/224                                                XregB/n_7
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1549/M4(45.625,65.580):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1549/M18(45.625,66.165):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[5]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[5]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 37    Net X0/223                                                XregB/n_6
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1550/M4(46.005,68.020):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1550/M18(46.005,67.435):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[4]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[4]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 38    Net X0/225                                                XregB/n_5
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1551/M4(48.855,65.220):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1551/M18(48.855,64.635):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[3]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[3]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 39    Net X0/226                                                XregB/n_4
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1552/M4(49.235,68.020):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1552/M18(49.235,67.435):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[2]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[2]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 40    Net X0/198                                                XregB/n_3
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1553/M4(51.325,59.980):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1553/M18(51.325,60.565):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregB/Xout_reg[1]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregB/Xout_reg[1]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 41    Net X0/212                                                XregA/n_32
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1556/M4(53.415,68.380):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1556/M18(53.415,68.965):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregA/Xout_reg[30]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregA/Xout_reg[30]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 42    Net X0/227                                                XregA/n_31
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1554/M4(51.515,62.780):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1554/M18(51.515,63.365):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregA/Xout_reg[29]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregA/Xout_reg[29]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 43    Net X0/193                                                XregA/n_30
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1555/M4(53.415,62.420):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1555/M18(53.415,61.835):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregA/Xout_reg[28]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregA/Xout_reg[28]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 44    Net X0/170                                                XregA/n_28
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1557/M4(53.605,65.580):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1557/M18(53.605,66.165):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregA/Xout_reg[26]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregA/Xout_reg[26]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 45    Net X0/228                                                XregA/n_27
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1560/M4(60.825,65.220):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1560/M18(60.825,64.635):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregA/Xout_reg[25]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregA/Xout_reg[25]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 46    Net X0/194                                                XregA/n_26
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1561/M4(61.585,62.420):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1561/M18(61.585,61.835):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregA/Xout_reg[24]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregA/Xout_reg[24]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 47    Net X0/236                                                XregA/n_23
+       --- 3 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn2b):in2                                              ** missing connection **
+         X0/X1564/M4(65.435,59.980):g
+       
+       
+       (_smp2b):in2                                              ** missing connection **
+         X0/X1564/M18(65.435,60.565):g
+       
+       
+       ** missing connection **                                  (_smn2v):in1
+                                                                   XregA/Xout_reg[21]/M_MN3:g
+       
+       
+       ** missing connection **                                  (_smp2v):in1
+                                                                   XregA/Xout_reg[21]/M_MP3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 48    Net X0/X1476/8                                            XoutReg/Xi_0_33/ZN_neg
+       --- 2 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_nand2b):out                                             ** missing connection **
+         X0/X1476/M4(5.985,66.395):s
+         X0/X1476/M3(6.175,66.395):d
+         X0/X1476/M1(5.985,65.490):d
+       
+       
+       (_invb):in                                                ** missing connection **
+         X0/X1476/M2(5.795,65.490):g
+         X0/X1476/M5(5.795,66.080):g
+       
+       
+       ** missing connection **                                  (_nand2v):out
+                                                                   XoutReg/Xi_0_33/M_i_4:d
+                                                                   XoutReg/Xi_0_33/M_i_5:s
+                                                                   XoutReg/Xi_0_33/M_i_2:d
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   XoutReg/Xi_0_33/M_i_0:g
+                                                                   XoutReg/Xi_0_33/M_i_1:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 49    Net X0/X1477/8                                            XoutReg/Xi_0_32/ZN_neg
+       --- 2 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_nand2b):out                                             ** missing connection **
+         X0/X1477/M4(6.465,63.595):s
+         X0/X1477/M3(6.275,63.595):d
+         X0/X1477/M1(6.465,62.690):d
+       
+       
+       (_invb):in                                                ** missing connection **
+         X0/X1477/M2(6.655,62.690):g
+         X0/X1477/M5(6.655,63.280):g
+       
+       
+       ** missing connection **                                  (_nand2v):out
+                                                                   XoutReg/Xi_0_32/M_i_4:d
+                                                                   XoutReg/Xi_0_32/M_i_5:s
+                                                                   XoutReg/Xi_0_32/M_i_2:d
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   XoutReg/Xi_0_32/M_i_0:g
+                                                                   XoutReg/Xi_0_32/M_i_1:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 50    Net X0/X1478/8                                            XoutReg/Xi_0_31/ZN_neg
+       --- 2 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_nand2b):out                                             ** missing connection **
+         X0/X1478/M4(6.745,66.395):s
+         X0/X1478/M3(6.935,66.395):d
+         X0/X1478/M1(6.745,65.490):d
+       
+       
+       (_invb):in                                                ** missing connection **
+         X0/X1478/M2(6.555,65.490):g
+         X0/X1478/M5(6.555,66.080):g
+       
+       
+       ** missing connection **                                  (_nand2v):out
+                                                                   XoutReg/Xi_0_31/M_i_4:d
+                                                                   XoutReg/Xi_0_31/M_i_5:s
+                                                                   XoutReg/Xi_0_31/M_i_2:d
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   XoutReg/Xi_0_31/M_i_0:g
+                                                                   XoutReg/Xi_0_31/M_i_1:g
+       
+
+
+**************************************************************************************************************
+                                 INCORRECT INSTANCES
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+ 51    X4/X2615/M26(24.325,25.205)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_1/M_instance_275  MP(PMOS_VTL)
+         g: X4/377                                                 g: Xfpa_obj/XA1/n_45
+         d: VDD                                                    d: VDD
+         b: 724                                                    ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 52    X4/X2615/M25(24.135,25.205)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_1/M_instance_280  MP(PMOS_VTL)
+         g: X4/322                                                 g: Xfpa_obj/XA1/n_21
+         b: 724                                                    ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 53    X4/X2615/M24(23.945,25.205)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_1/M_instance_284  MP(PMOS_VTL)
+         g: X4/273                                                 g: Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/n_0_0
+         d: X4/X2615/15                                            d: Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_1/net_005
+         b: 724                                                    ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 54    X4/X2615/M12(24.325,26.110)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_1/M_instance_194  MN(NMOS_VTL)
+         g: X4/377                                                 g: Xfpa_obj/XA1/n_45
+         d: VSS                                                    d: VSS
+         b: X4/405                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 55    X4/X2615/M11(24.135,26.110)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_1/M_instance_199  MN(NMOS_VTL)
+         g: X4/322                                                 g: Xfpa_obj/XA1/n_21
+         b: X4/405                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 56    X4/X2615/M10(23.945,26.110)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_1/M_instance_203  MN(NMOS_VTL)
+         g: X4/273                                                 g: Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/n_0_0
+         d: X4/X2615/15                                            d: Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_1/net_005
+         b: X4/405                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 57    X5/X3341/M26(23.565,24.395)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_2/M_instance_275  MP(PMOS_VTL)
+         g: 344                                                    g: Xfpa_obj/XA1/n_46
+         d: VDD                                                    d: VDD
+         b: 724                                                    ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 58    X5/X3341/M25(23.375,24.395)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_2/M_instance_280  MP(PMOS_VTL)
+         g: 346                                                    g: Xfpa_obj/XA1/n_22
+         b: 724                                                    ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 59    X5/X3341/M24(23.185,24.395)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_2/M_instance_284  MP(PMOS_VTL)
+         g: 647                                                    g: Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/n_0_1
+         d: X5/X3341/15                                            d: Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_2/net_005
+         b: 724                                                    ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 60    X5/X3341/M12(23.565,23.490)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_2/M_instance_194  MN(NMOS_VTL)
+         g: 344                                                    g: Xfpa_obj/XA1/n_46
+         d: VSS                                                    d: VSS
+         b: X5/464                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 61    X5/X3341/M11(23.375,23.490)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_2/M_instance_199  MN(NMOS_VTL)
+         g: 346                                                    g: Xfpa_obj/XA1/n_22
+         b: X5/464                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 62    X5/X3341/M10(23.185,23.490)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_2/M_instance_203  MN(NMOS_VTL)
+         g: 647                                                    g: Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/n_0_1
+         d: X5/X3341/15                                            d: Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_2/net_005
+         b: X5/464                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 63    X3/X3225/M26(28.785,41.195)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_3_stage1/Xi_0_2/M_instance_275  MP(PMOS_VTL)
+         g: 217                                                    g: Xfpa_obj/XA1/n_38
+         d: X3/X3225/15                                            ** Xfpa_obj/XA1/Xc1/Xgenblk1_3_stage1/Xi_0_2/net_005 **
+         b: X3/416                                                 ** no similar net **
+         ** VDD **                                                 d: VDD
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 64    X3/X3225/M25(28.975,41.195)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_3_stage1/Xi_0_2/M_instance_280  MP(PMOS_VTL)
+         g: 561                                                    g: Xfpa_obj/XA1/n_14
+         d: VDD                                                    b: VDD
+         b: X3/416                                                 ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 65    X3/X3225/M24(29.165,41.195)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_3_stage1/Xi_0_2/M_instance_284  MP(PMOS_VTL)
+         g: 622                                                    g: Xfpa_obj/XA1/Xc1/Xgenblk1_3_stage1/n_0_1
+         b: X3/416                                                 ** no similar net **
+         ** X3/X3225/15 **                                         d: Xfpa_obj/XA1/Xc1/Xgenblk1_3_stage1/Xi_0_2/net_005
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 66    X3/X3225/M12(28.785,40.290)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_3_stage1/Xi_0_2/M_instance_194  MN(NMOS_VTL)
+         g: 217                                                    g: Xfpa_obj/XA1/n_38
+         d: VSS                                                    d: VSS
+         b: X3/413                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 67    X3/X3225/M11(28.975,40.290)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_3_stage1/Xi_0_2/M_instance_199  MN(NMOS_VTL)
+         g: 561                                                    g: Xfpa_obj/XA1/n_14
+         b: X3/413                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 68    X3/X3225/M10(29.165,40.290)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_3_stage1/Xi_0_2/M_instance_203  MN(NMOS_VTL)
+         g: 622                                                    g: Xfpa_obj/XA1/Xc1/Xgenblk1_3_stage1/n_0_1
+         d: X3/X3225/15                                            d: Xfpa_obj/XA1/Xc1/Xgenblk1_3_stage1/Xi_0_2/net_005
+         b: X3/413                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 69    X2/X2691/M26(41.615,49.595)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_0/M_instance_275  MP(PMOS_VTL)
+         g: X2/292                                                 g: Xfpa_obj/XA1/Xc1/n_10
+         b: X2/367                                                 ** no similar net **
+         ** VDD **                                                 d: VDD
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 70    X2/X2691/M25(41.425,49.595)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_0/M_instance_280  MP(PMOS_VTL)
+         g: X2/327                                                 g: Xfpa_obj/XA1/n_8
+         d: X2/X2691/15                                            ** Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_0/net_005 **
+         b: X2/367                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 71    X2/X2691/M24(41.235,49.595)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_0/M_instance_284  MP(PMOS_VTL)
+         g: X2/257                                                 g: Xfpa_obj/XA1/n_32
+         d: VDD                                                    b: VDD
+         b: X2/367                                                 ** no similar net **
+         ** X2/X2691/15 **                                         d: Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_0/net_005
+
+--------------------------------------------------------------------------------------------------------------
+
+ 72    X2/X2691/M12(41.615,48.690)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_0/M_instance_194  MN(NMOS_VTL)
+         g: X2/292                                                 g: Xfpa_obj/XA1/Xc1/n_10
+         b: X2/365                                                 ** no similar net **
+         ** VSS **                                                 d: VSS
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 73    X2/X2691/M11(41.425,48.690)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_0/M_instance_199  MN(NMOS_VTL)
+         g: X2/327                                                 g: Xfpa_obj/XA1/n_8
+         d: X2/X2691/15                                            ** Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_0/net_005 **
+         b: X2/365                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 74    X2/X2691/M10(41.235,48.690)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_0/M_instance_203  MN(NMOS_VTL)
+         g: X2/257                                                 g: Xfpa_obj/XA1/n_32
+         d: VSS                                                    b: VSS
+         b: X2/365                                                 ** no similar net **
+         ** X2/X2691/15 **                                         d: Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_0/net_005
+
+--------------------------------------------------------------------------------------------------------------
+
+ 75    X4/X2616/M26(26.885,29.995)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_0/M_instance_275  MP(PMOS_VTL)
+         g: X4/369                                                 g: Xfpa_obj/XA1/Xc1/n_13
+         d: VDD                                                    d: VDD
+         b: X4/409                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 76    X4/X2616/M25(27.075,29.995)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_0/M_instance_280  MP(PMOS_VTL)
+         g: 271                                                    g: Xfpa_obj/XA1/n_20
+         b: X4/409                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 77    X4/X2616/M24(27.265,29.995)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_0/M_instance_284  MP(PMOS_VTL)
+         g: X4/278                                                 g: Xfpa_obj/XA1/n_44
+         d: X4/X2616/15                                            d: Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_0/net_005
+         b: X4/409                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 78    X4/X2616/M12(26.885,29.090)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_0/M_instance_194  MN(NMOS_VTL)
+         g: X4/369                                                 g: Xfpa_obj/XA1/Xc1/n_13
+         d: VSS                                                    d: VSS
+         b: X4/407                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 79    X4/X2616/M11(27.075,29.090)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_0/M_instance_199  MN(NMOS_VTL)
+         g: 271                                                    g: Xfpa_obj/XA1/n_20
+         b: X4/407                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 80    X4/X2616/M10(27.265,29.090)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_0/M_instance_203  MN(NMOS_VTL)
+         g: X4/278                                                 g: Xfpa_obj/XA1/n_44
+         d: X4/X2616/15                                            d: Xfpa_obj/XA1/Xc1/Xgenblk1_5_stage1/Xi_0_0/net_005
+         b: X4/407                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 81    X2/X2692/M26(42.375,46.795)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_2/M_instance_275  MP(PMOS_VTL)
+         g: X2/339                                                 g: Xfpa_obj/XA1/n_34
+         d: VDD                                                    d: VDD
+         b: X2/366                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 82    X2/X2692/M25(42.185,46.795)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_2/M_instance_280  MP(PMOS_VTL)
+         g: X2/325                                                 g: Xfpa_obj/XA1/n_10
+         b: X2/366                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 83    X2/X2692/M24(41.995,46.795)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_2/M_instance_284  MP(PMOS_VTL)
+         g: X2/341                                                 g: Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/n_0_1
+         d: X2/X2692/15                                            d: Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_2/net_005
+         b: X2/366                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 84    X2/X2692/M12(42.375,45.890)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_2/M_instance_194  MN(NMOS_VTL)
+         g: X2/339                                                 g: Xfpa_obj/XA1/n_34
+         d: X2/X2692/15                                            ** Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_2/net_005 **
+         b: X2/364                                                 ** no similar net **
+         ** VSS **                                                 d: VSS
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 85    X2/X2692/M11(42.185,45.890)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_2/M_instance_199  MN(NMOS_VTL)
+         g: X2/325                                                 g: Xfpa_obj/XA1/n_10
+         d: VSS                                                    b: VSS
+         b: X2/364                                                 ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 86    X2/X2692/M10(41.995,45.890)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_2/M_instance_203  MN(NMOS_VTL)
+         g: X2/341                                                 g: Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/n_0_1
+         b: X2/364                                                 ** no similar net **
+         ** X2/X2692/15 **                                         d: Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_2/net_005
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 87    X2/X2693/M26(44.275,47.605)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_1/M_instance_275  MP(PMOS_VTL)
+         g: X2/348                                                 g: Xfpa_obj/XA1/n_33
+         d: VDD                                                    d: VDD
+         b: X2/366                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 88    X2/X2693/M25(44.085,47.605)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_1/M_instance_280  MP(PMOS_VTL)
+         g: X2/352                                                 g: Xfpa_obj/XA1/n_9
+         b: X2/366                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 89    X2/X2693/M24(43.895,47.605)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_1/M_instance_284  MP(PMOS_VTL)
+         g: X2/259                                                 g: Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/n_0_0
+         d: X2/X2693/15                                            d: Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_1/net_005
+         b: X2/366                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 90    X2/X2693/M12(44.275,48.510)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_1/M_instance_194  MN(NMOS_VTL)
+         g: X2/348                                                 g: Xfpa_obj/XA1/n_33
+         d: VSS                                                    d: VSS
+         b: X2/365                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 91    X2/X2693/M11(44.085,48.510)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_1/M_instance_199  MN(NMOS_VTL)
+         g: X2/352                                                 g: Xfpa_obj/XA1/n_9
+         b: X2/365                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 92    X2/X2693/M10(43.895,48.510)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_1/M_instance_203  MN(NMOS_VTL)
+         g: X2/259                                                 g: Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/n_0_0
+         d: X2/X2693/15                                            d: Xfpa_obj/XA1/Xc1/Xgenblk1_2_stage1/Xi_0_1/net_005
+         b: X2/365                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 93    X3/X3227/M26(29.925,33.605)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_4_stage1/Xi_0_1/M_instance_275  MP(PMOS_VTL)
+         g: X3/392                                                 g: Xfpa_obj/XA1/n_41
+         d: VDD                                                    d: VDD
+         b: 725                                                    ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 94    X3/X3227/M25(30.115,33.605)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_4_stage1/Xi_0_1/M_instance_280  MP(PMOS_VTL)
+         g: X3/357                                                 g: Xfpa_obj/XA1/n_17
+         b: 725                                                    ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 95    X3/X3227/M24(30.305,33.605)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_4_stage1/Xi_0_1/M_instance_284  MP(PMOS_VTL)
+         g: X3/322                                                 g: Xfpa_obj/XA1/Xc1/Xgenblk1_4_stage1/n_0_0
+         d: X3/X3227/15                                            d: Xfpa_obj/XA1/Xc1/Xgenblk1_4_stage1/Xi_0_1/net_005
+         b: 725                                                    ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 96    X3/X3227/M12(29.925,34.510)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_4_stage1/Xi_0_1/M_instance_194  MN(NMOS_VTL)
+         g: X3/392                                                 g: Xfpa_obj/XA1/n_41
+         d: VSS                                                    d: VSS
+         b: X3/414                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 97    X3/X3227/M11(30.115,34.510)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_4_stage1/Xi_0_1/M_instance_199  MN(NMOS_VTL)
+         g: X3/357                                                 g: Xfpa_obj/XA1/n_17
+         b: X3/414                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 98    X3/X3227/M10(30.305,34.510)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_4_stage1/Xi_0_1/M_instance_203  MN(NMOS_VTL)
+         g: X3/322                                                 g: Xfpa_obj/XA1/Xc1/Xgenblk1_4_stage1/n_0_0
+         d: X3/X3227/15                                            d: Xfpa_obj/XA1/Xc1/Xgenblk1_4_stage1/Xi_0_1/net_005
+         b: X3/414                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 99    X1/X2610/M26(45.505,53.205)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_1_stage1/Xi_0_1/M_instance_275  MP(PMOS_VTL)
+         g: X1/312                                                 g: Xfpa_obj/XA1/n_29
+         d: VDD                                                    d: VDD
+         b: X1/368                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+100    X1/X2610/M25(45.695,53.205)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_1_stage1/Xi_0_1/M_instance_280  MP(PMOS_VTL)
+         g: X1/311                                                 g: Xfpa_obj/XA1/n_5
+         b: X1/368                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+101    X1/X2610/M24(45.885,53.205)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xc1/Xgenblk1_1_stage1/Xi_0_1/M_instance_284  MP(PMOS_VTL)
+         g: X1/246                                                 g: Xfpa_obj/XA1/Xc1/Xgenblk1_1_stage1/n_0_0
+         d: X1/X2610/15                                            d: Xfpa_obj/XA1/Xc1/Xgenblk1_1_stage1/Xi_0_1/net_005
+         b: X1/368                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+
+
+**************************************************************************************************************
+                                      PROPERTY ERRORS
+
+DISC#  LAYOUT                                                    SOURCE                      ERROR
+**************************************************************************************************************
+
+102    X7/X1011/M19(2.115,1.870)  MP(PMOS_VTL)                   XregB/Xout_reg[14]/M_MP14  MP(PMOS_VTL)
+       w: 0.315 u                                                w: 0.63 u                  0.315 u
+
+103    X7/X1011/M5(2.115,1.180)  MN(NMOS_VTL)                    XregB/Xout_reg[14]/M_MN14  MN(NMOS_VTL)
+       w: 0.21 u                                                 w: 0.415 u                 0.205 u
+
+104    X3/X2252/M26(44.675,40.880)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xi_e_reg[4]/M_i_48  MP(PMOS_VTL)
+       w: 0.63 u                                                 w: 0.315 u                 0.315 u
+
+105    X3/X2252/M12(44.675,40.290)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xi_e_reg[4]/M_i_0  MN(NMOS_VTL)
+       w: 0.415 u                                                w: 0.21 u                  0.205 u
+
+106    X3/X2251/M26(43.725,36.720)  MP(PMOS_VTL)                 XoutReg/Xout_reg[2]/M_MP5  MP(PMOS_VTL)
+       w: 0.63 u                                                 w: 0.315 u                 0.315 u
+
+107    X3/X2251/M12(43.725,37.310)  MN(NMOS_VTL)                 XoutReg/Xout_reg[2]/M_MN5  MN(NMOS_VTL)
+       w: 0.415 u                                                w: 0.21 u                  0.205 u
+
+108    X3/X3089/M0(35.915,40.110)  MN(NMOS_VTL)                  XregB/Xout_reg[1]/M_MN14  MN(NMOS_VTL)
+       w: 0.195 u                                                w: 0.415 u                  0.22 u
+
+109    X2/X1936/M19(67.285,50.530)  MP(PMOS_VTL)                 XregB/Xout_reg[17]/M_MP14  MP(PMOS_VTL)
+       w: 0.315 u                                                w: 0.63 u                  0.315 u
+
+110    X2/X1936/M5(67.285,51.220)  MN(NMOS_VTL)                  XregB/Xout_reg[17]/M_MN14  MN(NMOS_VTL)
+       w: 0.21 u                                                 w: 0.415 u                 0.205 u
+
+111    X2/X1935/M19(67.285,47.730)  MP(PMOS_VTL)                 XregA/Xout_reg[19]/M_MP14  MP(PMOS_VTL)
+       w: 0.315 u                                                w: 0.63 u                  0.315 u
+
+112    X2/X1935/M5(67.285,48.420)  MN(NMOS_VTL)                  XregA/Xout_reg[19]/M_MN14  MN(NMOS_VTL)
+       w: 0.21 u                                                 w: 0.415 u                 0.205 u
+
+113    X2/X1933/M26(68.995,43.680)  MP(PMOS_VTL)                 Xfpa_obj/XA1/Xi_e_reg[5]/M_i_48  MP(PMOS_VTL)
+       w: 0.63 u                                                 w: 0.315 u                 0.315 u
+
+114    X2/X1933/M12(68.995,43.090)  MN(NMOS_VTL)                 Xfpa_obj/XA1/Xi_e_reg[5]/M_i_0  MN(NMOS_VTL)
+       w: 0.415 u                                                w: 0.21 u                  0.205 u
+
+115    X2/X2529/M8(61.060,47.605)  MP(PMOS_VTL)                  XregA/Xout_reg[20]/M_MP14  MP(PMOS_VTL)
+       w: 0.315 u                                                w: 0.63 u                  0.315 u
+
+116    X2/X2529/M0(61.060,48.510)  MN(NMOS_VTL)                  XregA/Xout_reg[20]/M_MN14  MN(NMOS_VTL)
+       w: 0.21 u                                                 w: 0.415 u                 0.205 u
+
+117    X5/X2293/M19(3.115,22.530)  MP(PMOS_VTL)                  XregB/Xout_reg[15]/M_MP14  MP(PMOS_VTL)
+       w: 0.315 u                                                w: 0.63 u                  0.315 u
+
+118    X5/X2293/M5(3.115,23.220)  MN(NMOS_VTL)                   XregB/Xout_reg[15]/M_MN14  MN(NMOS_VTL)
+       w: 0.21 u                                                 w: 0.415 u                 0.205 u
+
+119    X3/X3089/M7(36.485,39.520)  MP(PMOS_VTL)                  XoutReg/Xout_reg[25]/M_MP5  MP(PMOS_VTL)
+       w: 1.89 u                                                 w: 0.315 u                 1.575 u
+
+120    X3/X3089/M3(36.485,40.110)  MN(NMOS_VTL)                  XoutReg/Xout_reg[25]/M_MN5  MN(NMOS_VTL)
+       w: 0.585 u                                                w: 0.21 u                  0.375 u
+
+121    X7/M55(53.815,2.490)  MP(PMOS_VTL)                        XregB/Xout_reg[16]/M_MP1  MP(PMOS_VTL)
+       w: 5.04 u                                                 w: 0.315 u                 4.725 u
+
+122    X7/M25(53.815,3.515)  MN(NMOS_VTL)                        XregB/Xout_reg[16]/M_MN1  MN(NMOS_VTL)
+       w: 1.56 u                                                 w: 0.21 u                   1.35 u
+
+123    X0/X1557/M26(55.505,66.080)  MP(PMOS_VTL)                 XoutReg/Xout_reg[8]/M_MP5  MP(PMOS_VTL)
+       w: 0.63 u                                                 w: 0.315 u                 0.315 u
+
+124    X0/X1557/M12(55.505,65.490)  MN(NMOS_VTL)                 XoutReg/Xout_reg[8]/M_MN5  MN(NMOS_VTL)
+       w: 0.415 u                                                w: 0.21 u                  0.205 u
+
+125    X0/X1556/M26(55.315,68.880)  MP(PMOS_VTL)                 XoutReg/Xout_reg[9]/M_MP5  MP(PMOS_VTL)
+       w: 0.63 u                                                 w: 0.315 u                 0.315 u
+
+126    X0/X1556/M12(55.315,68.290)  MN(NMOS_VTL)                 XoutReg/Xout_reg[9]/M_MN5  MN(NMOS_VTL)
+       w: 0.415 u                                                w: 0.21 u                  0.205 u
+
+127    X0/X1560/M26(62.725,64.720)  MP(PMOS_VTL)                 XoutReg/Xout_reg[6]/M_MP5  MP(PMOS_VTL)
+       w: 0.63 u                                                 w: 0.315 u                 0.315 u
+
+128    X0/X1560/M12(62.725,65.310)  MN(NMOS_VTL)                 XoutReg/Xout_reg[6]/M_MN5  MN(NMOS_VTL)
+       w: 0.415 u                                                w: 0.21 u                  0.205 u
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:             102        102            0            0
+
+   Nets:             3194       3194           53            1
+
+   Instances:         169        169            0            0    MN(NMOS_VTL)
+                      140        140            0            0    MP(PMOS_VTL)
+                      124        124            0            0    SPMN_2_1
+                       25         25            0            0    SPMN_2_1_1
+                       51         51            0            0    SPMN_2_2
+                       34         34            0            0    SPMN_2_2_1
+                       21         21            0            0    SPMN_2_2_2
+                       18         18            0            0    SPMN_3_1
+                       23         23            0            0    SPMN_3_3
+                      149        149            0            0    SPMP_2_1
+                       26         26            0            0    SPMP_2_1_1
+                      198        198            0            0    SPMP_2_2
+                       35         35            0            0    SPMP_2_2_1
+                       85         85            0            0    SPMP_2_2_2
+                       18         18            0            0    SPMP_3_1
+                        0          0            3            0    _invb
+                     1550       1550            0            0    _invv
+                       11         11            0            0    _invx2v
+                        0          0            0            1    _invx3v
+                      279        279            0            0    _nand2v
+                       42         42            0            0    _nand3v
+                       26         26            0            0    _nand4v
+                       80         80            0            0    _nor2v
+                       22         22            0            0    _nor3v
+                       23         23            0            0    _nor4v
+                       26         26            0            0    _pmn2v
+                       25         25            0            0    _pmp2v
+                     1538       1538            0            0    _smn2v
+                       18         18            0            0    _smn3v
+                     1018       1018            0            0    _smp2v
+                       70         70            0            0    _smp3v
+                  -------    -------    ---------    ---------
+   Total Inst:       5844       5844            3            1
+
+
+o Statistics:
+
+   1 passthrough layout net was deleted.
+
+   254 layout mos transistors were reduced to 107.  19 connecting nets were deleted.
+     107 mos transistors were deleted by parallel reduction.
+     3 mos transistors were deleted by semi-series reduction.
+     37 mos transistors and 19 connecting nets were deleted by split-gate reduction.
+   254 source mos transistors were reduced to 107.  19 connecting nets were deleted.
+     107 mos transistors were deleted by parallel reduction.
+     3 mos transistors were deleted by semi-series reduction.
+     37 mos transistors and 19 connecting nets were deleted by split-gate reduction.
+
+   10 source nets had all their pins removed and were deleted.
+
+   55 nets and 1 instance were matched arbitrarily.
+
+
+o Passthrough Layout Nets And Their Ports:
+
+      (Layout nets which are connected only to ports).
+
+   695 (port: 695),
+
+
+o Initial Correspondence Points:
+
+   Ports:        VSS VDD result[14] result[13] inputA[31] result[12] inputB[13] result[11]
+                 inputB[14] inputB[12] inputA[12] inputA[14] inputA[13] inputB[11] inputA[11]
+                 inputB[1] inputB[10] inputB[0] inputA[16] inputA[0] inputA[10] inputA[1]
+                 inputA[9] inputB[9] inputA[8] inputB[8] inputB[7] inputB[5] inputB[4] inputB[3]
+                 inputB[2] inputA[2] inputA[7] result[10] result[9] result[1] inputA[4]
+                 inputB[19] OF clk result[29] result[28] result[30] result[27] inputA[28]
+                 inputB[24] inputA[29] inputB[26] inputA[30] inputA[27]
+
+
+o Ambiguity Resolution Points:
+
+      (Each one of the following objects belongs to a group of indistinguishable objects.
+       The listed objects were matched arbitrarily by the Ambiguity Resolution feature of LVS.
+       Arbitrary matching may be prevented by assigning names to these objects or to adjacent nets).
+
+       Layout                                                    Source
+       ------                                                    ------
+
+                                     Nets
+                                     ----
+
+       X0/X1527/11                                               XregB/Xout_reg[0]/cni
+       X5/X2295/11                                               XregA/Xout_reg[22]/cni
+       X6/X1805/11                                               XregA/Xout_reg[23]/cni
+       X0/X1532/11                                               XregA/Xout_reg[0]/cni
+       X0/X1528/11                                               XoutReg/Xout_reg[23]/cni
+       X1/X1879/11                                               XoutReg/Xout_reg[27]/cni
+       X5/X2291/11                                               XoutReg/Xout_reg[31]/cni
+       X7/X1015/11                                               XoutReg/Xout_reg[0]/cni
+       X0/X1529/11                                               XoutReg/Xout_reg[2]/cni
+       X0/X1530/11                                               XoutReg/Xout_reg[3]/cni
+       X0/X1531/11                                               XoutReg/Xout_reg[4]/cni
+       X0/X1533/11                                               XoutReg/Xout_reg[5]/cni
+       X0/X1558/11                                               XoutReg/Xout_reg[6]/cni
+       X0/X1559/11                                               XoutReg/Xout_reg[7]/cni
+       X0/X1562/11                                               XoutReg/Xout_reg[8]/cni
+       X0/X1563/11                                               XoutReg/Xout_reg[9]/cni
+       X0/X1565/11                                               XoutReg/Xout_reg[10]/cni
+       X0/X1566/11                                               XoutReg/Xout_reg[11]/cni
+       X0/X1567/11                                               XoutReg/Xout_reg[12]/cni
+       X1/X1878/11                                               XoutReg/Xout_reg[13]/cni
+       X1/X1880/11                                               XoutReg/Xout_reg[14]/cni
+       X1/X1881/11                                               XoutReg/Xout_reg[15]/cni
+       X2/X1934/11                                               XoutReg/Xout_reg[16]/cni
+       X2/X1935/11                                               XoutReg/Xout_reg[17]/cni
+       X2/X1936/11                                               XoutReg/Xout_reg[18]/cni
+       X3/X2253/11                                               XoutReg/Xout_reg[19]/cni
+       X5/X2292/11                                               XoutReg/Xout_reg[20]/cni
+       X5/X2293/11                                               XoutReg/Xout_reg[21]/cni
+       X7/X1011/11                                               XoutReg/Xout_reg[24]/cni
+       X7/X1012/11                                               XoutReg/Xout_reg[25]/cni
+       X7/X1013/11                                               XoutReg/Xout_reg[26]/cni
+       X7/X1019/11                                               XoutReg/Xout_reg[28]/cni
+       X7/X1022/11                                               XoutReg/Xout_reg[29]/cni
+       X7/X1247/13                                               XregB/Xclk_gate_out_reg/net_002
+       X7/X1247/9                                                XregB/Xclk_gate_out_reg/net_000
+       X7/132                                                    XregB/n_1
+       X7/X1236/8                                                XregB/Xi_0_0/ZN_neg
+       X7/X1247/12                                               XregB/Xclk_gate_out_reg/net_006
+       X7/X1247/10                                               XregB/Xclk_gate_out_reg/net_005
+       X7/X1247/11                                               XregB/Xclk_gate_out_reg/net_004
+       X7/X1023/11                                               XregA/Xout_reg[24]/cni
+       X7/X1021/11                                               XregA/Xout_reg[30]/cni
+       X7/X1017/11                                               XregA/Xout_reg[29]/cni
+       X7/X1016/11                                               XregA/Xout_reg[28]/cni
+       X7/X1014/11                                               XregA/Xout_reg[26]/cni
+       X7/X1023/8                                                XregA/Xout_reg[24]/ci
+       X7/X1021/8                                                XregA/Xout_reg[30]/ci
+       X7/X1017/8                                                XregA/Xout_reg[29]/ci
+       X7/X1016/8                                                XregA/Xout_reg[28]/ci
+       X7/X1014/8                                                XregA/Xout_reg[26]/ci
+
+
+                                   Instances
+                                   ---------
+
+       (_invb)                                                   (_invv)
+       Devices: 
+         X7/X1147/M1(38.475,3.120)  MP(PMOS_VTL)                   XregA/Xi_0_1/M_i_1  MP(PMOS_VTL) 
+         X7/X1147/M0(38.475,3.710)  MN(NMOS_VTL)                   XregA/Xi_0_1/M_i_0  MN(NMOS_VTL) 
+
+
+
+
+**************************************************************************************************************
+                             DETAILED INSTANCE CONNECTIONS
+
+       LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+          (This section contains detailed information about connections of
+           matched instances that are involved in net discrepancies).
+
+--------------------------------------------------------------------------------------------------------------
+
+       X1/X2604/M7(44.670,54.880)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xc1/Xgenblk1_0_stage1/Xi_0_8/M_i_42  MP(PMOS_VTL)
+         g: X1/X2604/8                                             g: Xfpa_obj/XA1/Xc1/Xgenblk1_0_stage1/Xi_0_8/net_000
+         s: VDD                                                    s: VDD
+         d: X1/333                                                 d: Xfpa_obj/XA1/Xc1/Xgenblk1_0_stage1/n_0_6
+         b: X1/369                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X1/X2605/M7(47.770,54.880)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xc1/Xgenblk1_0_stage1/Xi_0_7/M_i_42  MP(PMOS_VTL)
+         g: X1/X2605/8                                             g: Xfpa_obj/XA1/Xc1/Xgenblk1_0_stage1/Xi_0_7/net_000
+         s: VDD                                                    s: VDD
+         d: 186                                                    d: Xfpa_obj/XA1/CLA_SUM[3]
+         b: X1/369                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X3/X3170/M7(56.145,40.880)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_199/M_i_7  MP(PMOS_VTL)
+         g: X3/298                                                 g: Xfpa_obj/XA1/Xnorm1/n_0_202
+         s: 246                                                    s: Xfpa_obj/XA1/Xnorm1/n_12
+         d: VDD                                                    d: VDD
+         b: X3/416                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X3/X3171/M7(65.645,35.280)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_215/M_i_7  MP(PMOS_VTL)
+         g: X3/303                                                 g: Xfpa_obj/XA1/Xnorm1/n_0_213
+         s: 252                                                    s: Xfpa_obj/XA1/Xnorm1/n_17
+         d: VDD                                                    d: VDD
+         b: X3/418                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X3/X3179/M5(53.800,36.720)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_268/M_i_5  MP(PMOS_VTL)
+         g: 710                                                    g: Xfpa_obj/XA1/Xnorm1/n_0_484
+         s: X3/329                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_259
+         d: VDD                                                    d: VDD
+         b: X3/418                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X3/X3180/M5(60.680,33.920)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_246/M_i_5  MP(PMOS_VTL)
+         g: 374                                                    g: Xfpa_obj/XA1/Xnorm1/n_0_352
+         s: X3/368                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_239
+         d: VDD                                                    d: VDD
+         b: 725                                                    ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X3/X3181/M5(61.020,39.520)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_187/M_i_5  MP(PMOS_VTL)
+         g: X3/369                                                 g: Xfpa_obj/XA1/Xnorm1/n_0_192
+         s: 190                                                    s: Xfpa_obj/XA1/Xnorm1/n_10
+         d: VDD                                                    d: VDD
+         b: X3/417                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X3/X3182/M5(62.540,40.880)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_189/M_i_5  MP(PMOS_VTL)
+         g: X3/399                                                 g: Xfpa_obj/XA1/Xnorm1/n_0_193
+         s: 625                                                    s: Xfpa_obj/XA1/Xnorm1/n_11
+         d: VDD                                                    d: VDD
+         b: X3/416                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X4/X2534/M7(51.585,25.520)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_338/M_i_7  MP(PMOS_VTL)
+         g: X4/295                                                 g: Xfpa_obj/XA1/Xnorm1/n_0_341
+         s: X4/373                                                 s: Xfpa_obj/XA1/Xnorm1/n_27
+         d: VDD                                                    d: VDD
+         b: 724                                                    ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X4/X2535/M7(64.985,29.680)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_234/M_i_7  MP(PMOS_VTL)
+         g: X4/313                                                 g: Xfpa_obj/XA1/Xnorm1/n_0_230
+         s: X4/311                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_228
+         d: VDD                                                    d: VDD
+         b: X4/409                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X4/X2536/M7(67.265,31.120)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_217/M_i_7  MP(PMOS_VTL)
+         g: X4/314                                                 g: Xfpa_obj/XA1/Xnorm1/n_0_215
+         s: 643                                                    s: Xfpa_obj/XA1/Xnorm1/n_0_214
+         d: VDD                                                    d: VDD
+         b: X4/409                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X4/X2547/M5(38.640,25.520)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_380/M_i_5  MP(PMOS_VTL)
+         g: X4/355                                                 g: Xfpa_obj/XA1/Xnorm1/n_0_368
+         s: X4/356                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_366
+         d: VDD                                                    d: VDD
+         b: 724                                                    ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X4/X2548/M5(46.770,29.680)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_388/M_i_5  MP(PMOS_VTL)
+         g: 229                                                    g: Xfpa_obj/XA1/i_m[11]
+         s: 703                                                    s: Xfpa_obj/XA1/Xnorm1/n_0_374
+         d: VDD                                                    d: VDD
+         b: X4/409                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X4/X2549/M5(48.710,29.680)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_367/M_i_5  MP(PMOS_VTL)
+         g: 304                                                    g: Xfpa_obj/XA1/Xnorm1/n_0_355
+         s: X4/330                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_354
+         d: VDD                                                    d: VDD
+         b: X4/409                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X4/X2550/M5(49.620,25.520)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_330/M_i_5  MP(PMOS_VTL)
+         g: 374                                                    g: Xfpa_obj/XA1/Xnorm1/n_0_352
+         s: 373                                                    s: Xfpa_obj/XA1/Xnorm1/n_0_318
+         d: VDD                                                    d: VDD
+         b: 724                                                    ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X4/X2551/M5(57.790,28.320)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_311/M_i_5  MP(PMOS_VTL)
+         g: 317                                                    g: Xfpa_obj/XA1/Xnorm1/n_0_405
+         s: X4/371                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_300
+         d: VDD                                                    d: VDD
+         b: X4/408                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X4/X2552/M5(63.300,26.880)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_350/M_i_5  MP(PMOS_VTL)
+         g: X4/341                                                 g: Xfpa_obj/XA1/Xnorm1/n_0_339
+         s: X4/374                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_337
+         d: VDD                                                    d: VDD
+         b: X4/408                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X4/X2553/M5(66.340,25.520)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_472/M_i_5  MP(PMOS_VTL)
+         g: X4/342                                                 g: Xfpa_obj/XA1/Xnorm1/n_0_457
+         s: 395                                                    s: Xfpa_obj/XA1/Xnorm1/n_0_456
+         d: VDD                                                    d: VDD
+         b: 724                                                    ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X4/X2554/M5(68.850,26.880)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_476/M_i_5  MP(PMOS_VTL)
+         g: 396                                                    g: Xfpa_obj/XA1/Xnorm1/n_0_492
+         s: X4/392                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_460
+         d: VDD                                                    d: VDD
+         b: X4/408                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X5/X3192/M2(44.505,17.710)  MN(NMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_42/M_i_2  MN(NMOS_VTL)
+         g: 357                                                    g: Xfpa_obj/XA1/i_m[18]
+         s: X5/355                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_63
+         d: VSS                                                    d: VSS
+         b: X5/463                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+       X5/X3194/M2(56.105,15.090)  MN(NMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_36/M_i_2  MN(NMOS_VTL)
+         g: 676                                                    g: Xfpa_obj/XA1/Xnorm1/n_0_448
+         s: X5/323                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_57
+         d: VSS                                                    d: VSS
+         b: 722                                                    ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+       X5/X3196/M2(59.705,17.890)  MN(NMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_18/M_i_2  MN(NMOS_VTL)
+         g: 229                                                    g: Xfpa_obj/XA1/i_m[11]
+         s: X5/443                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_40
+         d: VSS                                                    d: VSS
+         b: X5/463                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+       X5/X3197/M2(60.095,17.710)  MN(NMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_19/M_i_2  MN(NMOS_VTL)
+         g: 228                                                    g: Xfpa_obj/XA1/i_m[10]
+         s: X5/457                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_41
+         d: VSS                                                    d: VSS
+         b: X5/463                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+       X5/X3231/M7(43.895,24.080)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_413/M_i_7  MP(PMOS_VTL)
+         g: X5/314                                                 g: Xfpa_obj/XA1/Xnorm1/n_0_399
+         s: X5/349                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_398
+         d: VDD                                                    d: VDD
+         b: 724                                                    ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X5/X3232/M7(48.455,15.680)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_33/M_i_7  MP(PMOS_VTL)
+         g: 443                                                    g: Xfpa_obj/XA1/Xnorm1/n_0_503
+         s: 675                                                    s: Xfpa_obj/XA1/Xnorm1/n_0_54
+         d: VDD                                                    d: VDD
+         b: X5/467                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X5/X3233/M7(67.455,18.480)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_159/M_i_7  MP(PMOS_VTL)
+         g: X5/332                                                 g: Xfpa_obj/XA1/Xnorm1/n_0_171
+         s: X5/331                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_170
+         d: VDD                                                    d: VDD
+         b: X5/466                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X5/X3241/M5(38.410,17.120)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_417/M_i_5  MP(PMOS_VTL)
+         g: 439                                                    g: Xfpa_obj/XA1/Xnorm1/n_0_509
+         s: X5/416                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_402
+         d: VDD                                                    d: VDD
+         b: X5/467                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X5/X3242/M5(39.400,18.480)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_415/M_i_5  MP(PMOS_VTL)
+         g: X5/439                                                 g: Xfpa_obj/XA1/Xnorm1/n_0_401
+         s: X5/346                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_400
+         d: VDD                                                    d: VDD
+         b: X5/466                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X5/X3243/M5(41.070,19.920)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_454/M_i_5  MP(PMOS_VTL)
+         g: X5/402                                                 g: Xfpa_obj/XA1/Xnorm1/n_0_439
+         s: X5/303                                                 s: Xfpa_obj/XA1/Xnorm1/n_30
+         d: VDD                                                    d: VDD
+         b: X5/466                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X5/X3244/M5(42.210,18.480)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_459/M_i_5  MP(PMOS_VTL)
+         g: 439                                                    g: Xfpa_obj/XA1/Xnorm1/n_0_509
+         s: X5/347                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_443
+         d: VDD                                                    d: VDD
+         b: X5/466                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X5/X3245/M5(45.250,19.920)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_486/M_i_5  MP(PMOS_VTL)
+         g: 443                                                    g: Xfpa_obj/XA1/Xnorm1/n_0_503
+         s: X5/403                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_470
+         d: VDD                                                    d: VDD
+         b: X5/466                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X5/X3246/M5(45.100,21.280)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_386/M_i_5  MP(PMOS_VTL)
+         g: 439                                                    g: Xfpa_obj/XA1/Xnorm1/n_0_509
+         s: X5/316                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_372
+         d: VDD                                                    d: VDD
+         b: X5/465                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X5/X3247/M5(47.190,22.720)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_395/M_i_5  MP(PMOS_VTL)
+         g: 710                                                    g: Xfpa_obj/XA1/Xnorm1/n_0_484
+         s: X5/318                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_381
+         d: VDD                                                    d: VDD
+         b: X5/465                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X5/X3248/M5(51.900,17.120)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_35/M_i_5  MP(PMOS_VTL)
+         g: 653                                                    g: Xfpa_obj/XA1/Xnorm1/n_0_499
+         s: X5/324                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_56
+         d: VDD                                                    d: VDD
+         b: X5/467                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X5/X3249/M5(52.280,24.080)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_373/M_i_5  MP(PMOS_VTL)
+         g: X5/325                                                 g: Xfpa_obj/XA1/Xnorm1/n_0_362
+         s: 655                                                    s: Xfpa_obj/XA1/Xnorm1/n_0_359
+         d: VDD                                                    d: VDD
+         b: 724                                                    ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X5/X3250/M5(52.660,19.920)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_484/M_i_5  MP(PMOS_VTL)
+         g: 394                                                    g: Xfpa_obj/XA1/Xnorm1/n_0_497
+         s: X5/441                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_468
+         d: VDD                                                    d: VDD
+         b: X5/466                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X5/X3251/M5(54.600,19.920)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_461/M_i_5  MP(PMOS_VTL)
+         g: X5/362                                                 g: Xfpa_obj/XA1/Xnorm1/n_0_446
+         s: X5/442                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_445
+         d: VDD                                                    d: VDD
+         b: X5/466                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X5/X3252/M5(59.120,22.720)  MP(PMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_433/M_i_5  MP(PMOS_VTL)
+         g: X5/365                                                 g: Xfpa_obj/XA1/Xnorm1/n_0_421
+         s: X5/408                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_418
+         d: VDD                                                    d: VDD
+         b: X5/465                                                 ** no similar net **
+         ** VDD **                                                 b: VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+       X5/X3354/M2(40.285,15.090)  MN(NMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_16/M_i_2  MN(NMOS_VTL)
+         g: 242                                                    g: Xfpa_obj/XA1/Xnorm1/n_0_353
+         s: X5/451                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_38
+         d: VSS                                                    d: VSS
+         b: 722                                                    ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+       X5/X3358/M2(53.015,15.090)  MN(NMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_34/M_i_2  MN(NMOS_VTL)
+         g: X5/324                                                 g: Xfpa_obj/XA1/Xnorm1/n_0_56
+         s: X5/317                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_55
+         d: VSS                                                    d: VSS
+         b: 722                                                    ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+       X5/X3446/M2(39.230,15.090)  MN(NMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_15/M_i_13  MN(NMOS_VTL)
+         g: X5/X3446/8                                             g: Xfpa_obj/XA1/Xnorm1/Xi_0_15/net_000
+         s: VSS                                                    s: VSS
+         d: X5/307                                                 d: Xfpa_obj/XA1/Xnorm1/n_0
+         b: 722                                                    ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+       X6/X2440/M2(43.175,12.290)  MN(NMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_45/M_i_2  MN(NMOS_VTL)
+         g: 440                                                    g: Xfpa_obj/XA1/Xnorm1/n_0_70
+         s: 436                                                    s: Xfpa_obj/XA1/Xnorm1/n_0_66
+         d: VSS                                                    d: VSS
+         b: X6/386                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+       X6/X2441/M2(46.025,14.910)  MN(NMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_46/M_i_2  MN(NMOS_VTL)
+         g: 674                                                    g: Xfpa_obj/XA1/Xnorm1/n_0_73
+         s: 437                                                    s: Xfpa_obj/XA1/Xnorm1/n_0_67
+         d: VSS                                                    d: VSS
+         b: 722                                                    ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+       X6/X2442/M2(47.165,6.690)  MN(NMOS_VTL)                   Xfpa_obj/XA1/Xnorm1/Xi_0_55/M_i_2  MN(NMOS_VTL)
+         g: 493                                                    g: Xfpa_obj/XA1/Xnorm1/n_0_186
+         s: 444                                                    s: Xfpa_obj/XA1/Xnorm1/n_0_76
+         d: VSS                                                    d: VSS
+         b: 723                                                    ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+       X6/X2443/M2(48.875,12.110)  MN(NMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_75/M_i_2  MN(NMOS_VTL)
+         g: X6/319                                                 g: Xfpa_obj/XA1/Xnorm1/n_0_455
+         s: X6/348                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_95
+         d: VSS                                                    d: VSS
+         b: X6/386                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+       X6/X2444/M2(50.015,14.910)  MN(NMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_128/M_i_2  MN(NMOS_VTL)
+         g: X6/283                                                 g: Xfpa_obj/XA1/Xnorm1/n_0_143
+         s: X6/382                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_142
+         d: VSS                                                    d: VSS
+         b: 722                                                    ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+       X6/X2445/M2(52.685,12.290)  MN(NMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_31/M_i_2  MN(NMOS_VTL)
+         g: 253                                                    g: Xfpa_obj/XA1/i_m[7]
+         s: X6/350                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_52
+         d: VSS                                                    d: VSS
+         b: X6/386                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+       X6/X2446/M2(52.875,14.910)  MN(NMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_27/M_i_2  MN(NMOS_VTL)
+         g: 676                                                    g: Xfpa_obj/XA1/Xnorm1/n_0_448
+         s: X6/327                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_48
+         d: VSS                                                    d: VSS
+         b: 722                                                    ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+       X6/X2447/M2(54.765,12.110)  MN(NMOS_VTL)                  Xfpa_obj/XA1/Xnorm1/Xi_0_81/M_i_2  MN(NMOS_VTL)
+         g: 297                                                    g: Xfpa_obj/XA1/Xnorm1/n_0_483
+         s: X6/328                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_101
+         d: VSS                                                    d: VSS
+         b: X6/386                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+       X6/X2448/M2(54.775,9.310)  MN(NMOS_VTL)                   Xfpa_obj/XA1/Xnorm1/Xi_0_62/M_i_2  MN(NMOS_VTL)
+         g: X6/286                                                 g: Xfpa_obj/XA1/Xnorm1/n_0_84
+         s: X6/284                                                 s: Xfpa_obj/XA1/Xnorm1/n_0_82
+         d: VSS                                                    d: VSS
+         b: X6/387                                                 ** no similar net **
+         ** VSS **                                                 b: VSS
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      0 sec
+Total Elapsed Time:  1 sec

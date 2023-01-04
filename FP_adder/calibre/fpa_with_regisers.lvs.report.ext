@@ -1,0 +1,194 @@
+
+
+       #############################################################
+       ##                                                         ##
+       ##               C A L I B R E    S Y S T E M              ##
+       ##                                                         ##
+       ##    C I R C U I T   E X T R A C T I O N   R E P O R T    ##
+       ##                                                         ##
+       #############################################################
+
+
+REPORT FILE NAME:         fpa_with_regisers.lvs.report.ext
+LAYOUT NAME:              /home/vlsi/Desktop/Mini_Project_2__/work/fpa_with_regisers.gds ('fpa_with_regisers')
+CREATION TIME:            Wed Jan  4 02:40:12 2023
+CURRENT DIRECTORY:        /home/vlsi/Desktop/Mini_Project_2__/work/calibre
+USER NAME:                vlsi
+CALIBRE VERSION:          v2020.1_25.14    Mon Feb 3 16:40:25 PST 2020
+
+
+
+Extraction Errors and Warnings for cell "fpa_with_regisers"
+-----------------------------------------------------------
+
+WARNING:  Open circuit - Same name on different nets:
+          Name:  "VSS"
+          (1)  at location  (1.44,0.07)  on layer  21 "metal6"  on net id  1
+          (2)  at location  (1.44,71.33)  on layer  21 "metal6"  on net id  1
+          (3)  at location  (2.28,0.07)  on layer  21 "metal6"  on net id  1
+          (4)  at location  (2.28,71.33)  on layer  21 "metal6"  on net id  1
+          (5)  at location  (3.12,0.07)  on layer  21 "metal6"  on net id  1
+          (6)  at location  (3.12,71.33)  on layer  21 "metal6"  on net id  1
+          (7)  at location  (3.96,0.07)  on layer  21 "metal6"  on net id  1
+          (8)  at location  (3.96,71.33)  on layer  21 "metal6"  on net id  1
+          (9)  at location  (4.8,0.07)  on layer  21 "metal6"  on net id  1
+          (10)  at location  (4.8,71.33)  on layer  21 "metal6"  on net id  1
+          (11)  at location  (5.64,0.07)  on layer  21 "metal6"  on net id  1
+          (12)  at location  (5.64,71.33)  on layer  21 "metal6"  on net id  1
+          (13)  at location  (6.48,0.07)  on layer  21 "metal6"  on net id  1
+          (14)  at location  (6.48,71.33)  on layer  21 "metal6"  on net id  1
+          (15)  at location  (7.32,0.07)  on layer  21 "metal6"  on net id  1
+          (16)  at location  (7.32,71.33)  on layer  21 "metal6"  on net id  1
+          (17)  at location  (8.16,0.07)  on layer  21 "metal6"  on net id  1
+          (18)  at location  (8.16,71.33)  on layer  21 "metal6"  on net id  1
+          (19)  at location  (9,0.07)  on layer  21 "metal6"  on net id  1
+          (20)  at location  (9,71.33)  on layer  21 "metal6"  on net id  1
+          (21)  at location  (9.84,0.07)  on layer  21 "metal6"  on net id  1
+          (22)  at location  (9.84,71.33)  on layer  21 "metal6"  on net id  1
+          (23)  at location  (10.68,0.07)  on layer  21 "metal6"  on net id  1
+          (24)  at location  (10.68,71.33)  on layer  21 "metal6"  on net id  1
+          (25)  at location  (11.52,0.07)  on layer  21 "metal6"  on net id  1
+          (26)  at location  (11.52,71.33)  on layer  21 "metal6"  on net id  1
+          (27)  at location  (12.36,0.07)  on layer  21 "metal6"  on net id  1
+          (28)  at location  (12.36,71.33)  on layer  21 "metal6"  on net id  1
+          (29)  at location  (13.2,0.07)  on layer  21 "metal6"  on net id  1
+          (30)  at location  (13.2,71.33)  on layer  21 "metal6"  on net id  1
+          (31)  at location  (14.04,0.07)  on layer  21 "metal6"  on net id  1
+          (32)  at location  (14.04,71.33)  on layer  21 "metal6"  on net id  1
+          (33)  at location  (14.88,0.07)  on layer  21 "metal6"  on net id  1
+          (34)  at location  (14.88,71.33)  on layer  21 "metal6"  on net id  1
+          (35)  at location  (15.72,0.07)  on layer  21 "metal6"  on net id  1
+          (36)  at location  (15.72,71.33)  on layer  21 "metal6"  on net id  1
+          (37)  at location  (16.56,0.07)  on layer  21 "metal6"  on net id  1
+          (38)  at location  (16.56,71.33)  on layer  21 "metal6"  on net id  1
+          (39)  at location  (17.4,0.07)  on layer  21 "metal6"  on net id  1
+          (40)  at location  (17.4,71.33)  on layer  21 "metal6"  on net id  1
+          (41)  at location  (18.24,0.07)  on layer  21 "metal6"  on net id  1
+          (42)  at location  (18.24,71.33)  on layer  21 "metal6"  on net id  1
+          (43)  at location  (19.08,0.07)  on layer  21 "metal6"  on net id  1
+          (44)  at location  (19.08,71.33)  on layer  21 "metal6"  on net id  1
+          (45)  at location  (19.92,0.07)  on layer  21 "metal6"  on net id  1
+          (46)  at location  (19.92,71.33)  on layer  21 "metal6"  on net id  1
+          (47)  at location  (20.76,0.07)  on layer  21 "metal6"  on net id  1
+          (48)  at location  (20.76,71.33)  on layer  21 "metal6"  on net id  1
+          (49)  at location  (21.6,0.07)  on layer  21 "metal6"  on net id  1
+          (50)  at location  (21.6,71.33)  on layer  21 "metal6"  on net id  1
+          (51)  at location  (22.44,0.07)  on layer  21 "metal6"  on net id  1
+          (52)  at location  (22.44,71.33)  on layer  21 "metal6"  on net id  1
+          (53)  at location  (23.28,0.07)  on layer  21 "metal6"  on net id  1
+          (54)  at location  (23.28,71.33)  on layer  21 "metal6"  on net id  1
+          (55)  at location  (24.12,0.07)  on layer  21 "metal6"  on net id  1
+          (56)  at location  (24.12,71.33)  on layer  21 "metal6"  on net id  1
+          (57)  at location  (24.96,0.07)  on layer  21 "metal6"  on net id  1
+          (58)  at location  (24.96,71.33)  on layer  21 "metal6"  on net id  1
+          (59)  at location  (25.8,0.07)  on layer  21 "metal6"  on net id  1
+          (60)  at location  (25.8,71.33)  on layer  21 "metal6"  on net id  1
+          (61)  at location  (26.64,0.07)  on layer  21 "metal6"  on net id  1
+          (62)  at location  (26.64,71.33)  on layer  21 "metal6"  on net id  1
+          (63)  at location  (27.48,0.07)  on layer  21 "metal6"  on net id  1
+          (64)  at location  (27.48,71.33)  on layer  21 "metal6"  on net id  1
+          (65)  at location  (28.32,0.07)  on layer  21 "metal6"  on net id  1
+          (66)  at location  (28.32,71.33)  on layer  21 "metal6"  on net id  1
+          (67)  at location  (29.16,0.07)  on layer  21 "metal6"  on net id  1
+          (68)  at location  (29.16,71.33)  on layer  21 "metal6"  on net id  1
+          (69)  at location  (30,0.07)  on layer  21 "metal6"  on net id  1
+          (70)  at location  (30,71.33)  on layer  21 "metal6"  on net id  1
+          (71)  at location  (30.84,0.07)  on layer  21 "metal6"  on net id  1
+          (72)  at location  (30.84,71.33)  on layer  21 "metal6"  on net id  1
+          (73)  at location  (31.68,0.07)  on layer  21 "metal6"  on net id  1
+          (74)  at location  (31.68,71.33)  on layer  21 "metal6"  on net id  1
+          (75)  at location  (32.52,0.07)  on layer  21 "metal6"  on net id  1
+          (76)  at location  (32.52,71.33)  on layer  21 "metal6"  on net id  1
+          (77)  at location  (33.36,0.07)  on layer  21 "metal6"  on net id  1
+          (78)  at location  (33.36,71.33)  on layer  21 "metal6"  on net id  1
+          (79)  at location  (34.2,0.07)  on layer  21 "metal6"  on net id  1
+          (80)  at location  (34.2,71.33)  on layer  21 "metal6"  on net id  1
+          (81)  at location  (35.04,0.07)  on layer  21 "metal6"  on net id  1
+          (82)  at location  (35.04,71.33)  on layer  21 "metal6"  on net id  1
+          (83)  at location  (35.88,0.07)  on layer  21 "metal6"  on net id  1
+          (84)  at location  (35.88,71.33)  on layer  21 "metal6"  on net id  1
+          (85)  at location  (36.72,0.07)  on layer  21 "metal6"  on net id  1
+          (86)  at location  (36.72,71.33)  on layer  21 "metal6"  on net id  1
+          (87)  at location  (37.56,0.07)  on layer  21 "metal6"  on net id  1
+          (88)  at location  (37.56,71.33)  on layer  21 "metal6"  on net id  1
+          (89)  at location  (38.4,0.07)  on layer  21 "metal6"  on net id  1
+          (90)  at location  (38.4,71.33)  on layer  21 "metal6"  on net id  1
+          (91)  at location  (39.24,0.07)  on layer  21 "metal6"  on net id  1
+          (92)  at location  (39.24,71.33)  on layer  21 "metal6"  on net id  1
+          (93)  at location  (40.08,0.07)  on layer  21 "metal6"  on net id  1
+          (94)  at location  (40.08,71.33)  on layer  21 "metal6"  on net id  1
+          (95)  at location  (40.92,0.07)  on layer  21 "metal6"  on net id  1
+          (96)  at location  (40.92,71.33)  on layer  21 "metal6"  on net id  1
+          (97)  at location  (41.76,0.07)  on layer  21 "metal6"  on net id  1
+          (98)  at location  (41.76,71.33)  on layer  21 "metal6"  on net id  1
+          (99)  at location  (42.6,0.07)  on layer  21 "metal6"  on net id  1
+          (100)  at location  (42.6,71.33)  on layer  21 "metal6"  on net id  1
+          (101)  at location  (43.44,0.07)  on layer  21 "metal6"  on net id  1
+          (102)  at location  (43.44,71.33)  on layer  21 "metal6"  on net id  1
+          (103)  at location  (44.28,0.07)  on layer  21 "metal6"  on net id  1
+          (104)  at location  (44.28,71.33)  on layer  21 "metal6"  on net id  1
+          (105)  at location  (45.12,0.07)  on layer  21 "metal6"  on net id  1
+          (106)  at location  (45.12,71.33)  on layer  21 "metal6"  on net id  1
+          (107)  at location  (45.96,0.07)  on layer  21 "metal6"  on net id  1
+          (108)  at location  (45.96,71.33)  on layer  21 "metal6"  on net id  1
+          (109)  at location  (46.8,0.07)  on layer  21 "metal6"  on net id  1
+          (110)  at location  (46.8,71.33)  on layer  21 "metal6"  on net id  1
+          (111)  at location  (47.64,0.07)  on layer  21 "metal6"  on net id  1
+          (112)  at location  (47.64,71.33)  on layer  21 "metal6"  on net id  1
+          (113)  at location  (48.48,0.07)  on layer  21 "metal6"  on net id  1
+          (114)  at location  (48.48,71.33)  on layer  21 "metal6"  on net id  1
+          (115)  at location  (49.32,0.07)  on layer  21 "metal6"  on net id  1
+          (116)  at location  (49.32,71.33)  on layer  21 "metal6"  on net id  1
+          (117)  at location  (50.16,0.07)  on layer  21 "metal6"  on net id  1
+          (118)  at location  (50.16,71.33)  on layer  21 "metal6"  on net id  1
+          (119)  at location  (51,0.07)  on layer  21 "metal6"  on net id  1
+          (120)  at location  (51,71.33)  on layer  21 "metal6"  on net id  1
+          (121)  at location  (51.84,0.07)  on layer  21 "metal6"  on net id  1
+          (122)  at location  (51.84,71.33)  on layer  21 "metal6"  on net id  1
+          (123)  at location  (52.68,0.07)  on layer  21 "metal6"  on net id  1
+          (124)  at location  (52.68,71.33)  on layer  21 "metal6"  on net id  1
+          (125)  at location  (53.52,0.07)  on layer  21 "metal6"  on net id  1
+          (126)  at location  (53.52,71.33)  on layer  21 "metal6"  on net id  1
+          (127)  at location  (54.36,0.07)  on layer  21 "metal6"  on net id  1
+          (128)  at location  (54.36,71.33)  on layer  21 "metal6"  on net id  1
+          (129)  at location  (55.2,0.07)  on layer  21 "metal6"  on net id  1
+          (130)  at location  (55.2,71.33)  on layer  21 "metal6"  on net id  1
+          (131)  at location  (56.04,0.07)  on layer  21 "metal6"  on net id  1
+          (132)  at location  (56.04,71.33)  on layer  21 "metal6"  on net id  1
+          (133)  at location  (56.88,0.07)  on layer  21 "metal6"  on net id  1
+          (134)  at location  (56.88,71.33)  on layer  21 "metal6"  on net id  1
+          (135)  at location  (57.72,0.07)  on layer  21 "metal6"  on net id  1
+          (136)  at location  (57.72,71.33)  on layer  21 "metal6"  on net id  1
+          (137)  at location  (58.56,0.07)  on layer  21 "metal6"  on net id  1
+          (138)  at location  (58.56,71.33)  on layer  21 "metal6"  on net id  1
+          (139)  at location  (59.4,0.07)  on layer  21 "metal6"  on net id  1
+          (140)  at location  (59.4,71.33)  on layer  21 "metal6"  on net id  1
+          (141)  at location  (60.24,0.07)  on layer  21 "metal6"  on net id  1
+          (142)  at location  (60.24,71.33)  on layer  21 "metal6"  on net id  1
+          (143)  at location  (61.08,0.07)  on layer  21 "metal6"  on net id  1
+          (144)  at location  (61.08,71.33)  on layer  21 "metal6"  on net id  1
+          (145)  at location  (61.92,0.07)  on layer  21 "metal6"  on net id  1
+          (146)  at location  (61.92,71.33)  on layer  21 "metal6"  on net id  1
+          (147)  at location  (62.76,0.07)  on layer  21 "metal6"  on net id  1
+          (148)  at location  (62.76,71.33)  on layer  21 "metal6"  on net id  1
+          (149)  at location  (63.6,0.07)  on layer  21 "metal6"  on net id  1
+          (150)  at location  (63.6,71.33)  on layer  21 "metal6"  on net id  1
+          (151)  at location  (64.44,0.07)  on layer  21 "metal6"  on net id  1
+          (152)  at location  (64.44,71.33)  on layer  21 "metal6"  on net id  1
+          (153)  at location  (65.28,0.07)  on layer  21 "metal6"  on net id  1
+          (154)  at location  (65.28,71.33)  on layer  21 "metal6"  on net id  1
+          (155)  at location  (66.12,0.07)  on layer  21 "metal6"  on net id  1
+          (156)  at location  (66.12,71.33)  on layer  21 "metal6"  on net id  1
+          (157)  at location  (66.96,0.07)  on layer  21 "metal6"  on net id  1
+          (158)  at location  (66.96,71.33)  on layer  21 "metal6"  on net id  1
+          (159)  at location  (67.8,0.07)  on layer  21 "metal6"  on net id  1
+          (160)  at location  (67.8,71.33)  on layer  21 "metal6"  on net id  1
+          (161)  at location  (68.64,0.07)  on layer  21 "metal6"  on net id  1
+          (162)  at location  (68.64,71.33)  on layer  21 "metal6"  on net id  1
+          (163)  at location  (69.48,0.07)  on layer  21 "metal6"  on net id  695
+          (164)  at location  (69.48,71.33)  on layer  21 "metal6"  on net id  695
+          The name was assigned to net 1 .
+
+
+WARNING: Top level port name "VSS" on net 695 at location (69.48,0.07) already used on net 1; ignored.
+WARNING: Top level port name "VSS" on net 695 at location (69.48,71.33) already used on net 1; ignored.
